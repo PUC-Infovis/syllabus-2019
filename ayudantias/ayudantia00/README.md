@@ -1,12 +1,6 @@
-# Ayudantía `pandas, visualización en python y machine learning`
+# Ayudantía `pandas`
 
-Esta ayudantía consta de tres partes principales:
-
-1. Parte uno: introducción a pandas
-2. Parte dos: visualización de *datasets* con ayuda de pandas, matplotlib y altair
-3. Parte tres: *machine learning*
-
-Si al pasar de la parte uno a la parte dos, no tienen muy claro cómo funciona pandas, es recomendable reforzar y profundizar con la [siguiente ayudantía](https://github.com/nebil/data-wrangling) de pandas creada por [Nebil Kawas](https://github.com/nebil). `pandas` es una librería construida sobre numpy (abreviación de numerical Python) que es la librería angular para la programación científica en Python (Nebil, 2017). 
+Es recomendable reforzar y profundizar con la [siguiente ayudantía](https://github.com/nebil/data-wrangling) de pandas creada por [Nebil Kawas](https://github.com/nebil). `pandas` es una librería construida sobre numpy (abreviación de numerical Python) que es la librería angular para la programación científica en Python (Nebil, 2017). 
 
 Esta ayudantía puede verse ejecutando el [`jupyter notebook`](http://jupyter.org/): `Usos_de_Pandas.ipynb`, pero también puede evitar instalar dicha herramienta en su máquina abriendo el archivo en Google Colab:
 
