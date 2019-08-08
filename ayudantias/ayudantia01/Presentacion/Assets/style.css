@@ -1,0 +1,303 @@
+#container {
+    width: 100%;
+    height: 97vh;
+    display: grid;
+    grid-template-rows: 18fr 1fr;
+    grid-template-columns: 1fr 6fr 1fr;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+}
+
+#left, #right {
+    display: none;
+    height: 100%;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    padding: 6px 12px;
+}
+
+#slide_number {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.slide {
+    display: none;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    padding: 6px 12px;
+
+} 
+
+.slide {
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.state {
+    height: 100%;
+}
+
+.code-example {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.code-exmaple .code{
+    grid-column: 1/2;
+}
+
+.code-example .result {
+    grid-column: 2/3;
+}
+
+.code-example .result img {
+    /* height: 100%; */
+    width: 100%;
+    border: solid;
+    border-width: 1px; 
+}
+
+.html-1 {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.html-1 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.slide .html-1 h1, .slide .html-1 h2 {
+    color: black;
+}
+
+#css .code-text {
+    font-size: 14px;
+}
+
+#css .css-result .magenta {
+    color: magenta;
+}
+
+#css .css-result .azul {
+    color: blue;
+}
+
+#css .css-result p {
+    font-size: 20px;
+}
+
+#css .css-result #ultimo {
+    text-decoration: underline;
+    font-size: 24px;
+}
+
+.slide h1 {
+    font-size: 36px;
+    color: rgba(10, 10, 10, 0.58);
+}
+
+.slide h2 {
+    font-size: 32px;
+    color: rgba(10, 10, 10, 0.58);
+}
+
+.slide h3 {
+    font-size: 28px;
+}
+
+.slide p {
+    font-size: 20px;
+}
+
+.slide .pink {
+    color: rgb(232, 60, 183);
+}
+
+.slide span {
+    color: rgb(232, 60, 183);
+    font-weight: bold;   
+}
+
+.vertical-spaced {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.vertical-spaced-evenly {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.centered {
+    align-items: center;
+}
+
+.cover-border {
+    border-top-style: solid;
+    border-color: rgb(232, 60, 183);
+}
+
+.contents {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contents li {
+    grid-column: 2/3;
+    margin-bottom: 10%;
+}
+
+.grey {
+    color: rgba(0, 0, 0, .1);
+}
+
+.normal {
+    color: black;
+}
+
+ul {
+    list-style: none; /* Remove default bullets */
+    font-size: 20px;
+}
+
+ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: rgb(232, 60, 183); /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.smaller {
+    font-size: 12px;
+}
+
+.highlight {
+    background-color: rgb(232, 60, 183); 
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+#canvas-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titled-slide {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 75px auto;
+}
+
+.vertical-centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.horizontal-centered {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.spaced li {
+    padding: 10px;
+}
+
+.slide .code-text {
+    font-family: 'Fira Code', monospace;
+    font-size: 18px;
+    font-weight: 100;
+    color: black;
+}
+
+.slide .big {
+    font-size: 24px;
+}
+
+.titled-slide .html-structure {
+    grid-template-rows: 75px auto auto;
+}
+
+#wikilogo {
+    width: 20%;
+}
+
+#dom {
+    width: 40%;
+}
+
+.css {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;   
+}
+
+.css-html {
+    grid-column: 1/2;
+    padding-right: 20px;
+}
+
+.css-css {
+    grid-column: 2/3;
+}
+
+.css-result {
+    grid-column: 3/4;
+}
+
+.d5 {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.blue-background {
+    background: blue;
+    color: white;
+}
+
+.contenedor-imagen {
+    width: 200px;
+    height: 200px;
+}
+
+.contenedor-imagen img {
+    width: 100%;
+    height: 100%;
+}
+
+.slide .crossed {
+    color: black;
+    text-decoration: line-through;
+    font-weight: 100; 
+}

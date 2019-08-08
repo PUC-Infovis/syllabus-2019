@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HTML y CSS</title>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet"> 
+  <link href='./Assets/style.css' rel='stylesheet'>
+  <script src="./Assets/p5.js"></script>
+  <script src="./Assets/slides.js"></script>
+  <script src="./Assets/ppt.js"></script>
+  <script src="./Assets/web_animations.js"></script>
+</head>
+<body>
+
+  <div id="container">
+
+    <div id="left">
+      <div class="vertical-centered">
+        <div class="horizontal-centered">
+          <h1>Selecciona la tecla que usarás para retroceder.</h1>
+        </div>
+      </div>
+    </div>
+
+    <div id="right">
+      <div class="vertical-centered">
+        <div class="horizontal-centered">
+          <h1>Selecciona la tecla que usarás para avanzar.</h1>
+        </div>
+      </div>
+    </div>
+
+    <div id="0" class="slide">
+      <div class="state 0">
+        <div class="vertical-spaced">
+          <div>
+            <h1>Introducción a la web:</h1>
+            <h1>HTML y CSS</h1>
+          </div>
+          <div class="cover-border"></div>
+          <div>
+            <h2 class="pink">IIC2026 - Visualización de Información (2019-2)</h2>
+            <p>Eugenio Herrera Berg</p>
+            <p>eiherrera@uc.cl</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="1" class="slide">
+      <div class="state 0">
+        <div class="vertical-spaced">
+          <div>
+            <h1>Introducción a la web:</h1>
+            <h1>HTML y CSS</h1>
+          </div>
+          <div class="cover-border"></div>
+          <div>
+            <h2 class="pink">IIC2026 - Visualización de Información (2019-2)</h2>
+            <p><span class="crossed">Eugenio Herrera Berg</span> Fernando Florenzano</p>
+            <p>eiherrera@uc.cl</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="2" class="slide">
+      <div class="state 0">
+        <div class="titled-slide">
+          <div>
+            <h1>Contenidos</h1>
+          </div>
+          <div class="vertical-centered">
+            <ol class="contents">
+              <li>Internet y la web</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="state 1">
+        <div class="titled-slide">
+          <div>
+            <h1>Contenidos</h1>
+          </div>
+          <div class="vertical-centered">
+            <ol class="contents grey">
+              <li class="normal">Internet y la web</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+    <div id="3" class="slide">
+      <div class="state 0">
+        <div class="vertical-spaced-evenly centered">
+          <h3>¿Qué es <span>internet</span>?</h3>
+          <h3>¿Qué es la <span>web?</span></h3>
+          <h3>¿Son lo mismo?</h3>
+        </div>
+      </div>
+    </div>
+
+    <div id="4" class="slide">
+      <div class="state 0">
+        <div class="titled-slide">
+          <div>
+            <h2>Internet</h2>
+          </div>
+          <div class="vertical-centered">
+            <p><span>Internet</span> es el <span>sistema físico de computadores</span> que están
+                <span>interconectados</span> globalmente bajo protocolos TCP/IP.</p>
+            Es utilizado para:
+            <ul>
+              <li>enviar e-mails</li>
+              <li>transferir archivos</li>
+              <li>telefonía IP</li>
+              <li>funcionamiento de la web</li>
+            </ul>
+            <div class="highlight">
+              <p>¡Internet es la estructura física que alberga muchos servicios!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="5" class="slide">
+      <div class="state 0">
+        <div class="titled-slide">
+          <div>
+            <h2>La web</h2>
+          </div>
+          <div class="vertical-centered">
+            <p>La <span>web</span> es un sistema de <span>distribución</span> de <span>documentos</span> de hipertexto o
+                hipermedios interconectados y accesibles vía <span>Internet</span>.</p>
+            <div id="canvas-container"></div>
+          </div>
+        </div>
+      </div>
+      <div class="state 1">
+        <div class="titled-slide">
+          <div>
+            <h2>La web</h2>
+          </div>
+          <div class="vertical-centered">
+            <p>La <span>web</span> es un sistema de <span>distribución</span> de <span>documentos</span> de hipertexto o
+              hipermedios interconectados y accesibles vía <span>Internet</span>.</p>
+            <ul class="spaced">
+              <li>Con un <span>navegador web</span>, un usuario visualiza sitios web compuestos
+                de <span>páginas web</span>.</li>
+              <li>Una página web puede contener textos, imágenes, vídeos u otros
+                contenidos multimedia.</li>
+              <li>Se navega entre páginas utilizando <span>hipervínculos</span>.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="state 2">
+        <div class="titled-slide">
+          <div>
+            <h2>La web</h2>
+          </div>
+          <div class="vertical-centered">
+            <ul class="spaced">
+              <li>Las <span>páginas web</span> son documentos de texto <span>enriquezido</span>, escritos en
+                <span>HTML</span>.</li>
+              <li>Los recursos, o <span>páginas web</span>, se acceden mediante una <span>dirección</span>,
+                comúnmente vía una <span>URL</span> o por <span>hipervínculos</span>.</li>
+              <li>Los recursos son entregados mediante el protocolo <span>HTTP</span>
+                (<span>H</span>yper<span>t</span>ext <span>T</span>ransfer <span>P</span>rotocol) hacia el <span>cliente</span> desde el <span>web server</span>.</li>
+              <li>La solicitud de un recurso se conoce como <span class="italic">request</span>. Existen varios
+                tipos de <span class="italic">request</span> dependiendo del uso.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="6" class="slide">
+      <div class="state 0">
+        <div class="titled-slide">
+          <div>
+            <h2>Navegadores web</h2>
+          </div>
+          <div class="vertical-centered">
+            <ul class="spaced">
+              <li>La respuesta de una <span class="italic">request</span> puede ser un documento <span>HTML</span>.</li>
+              <li>Un <span>navegador web</span> interpreta y visualiza el contenido del
+                documento <span>HTML</span>, también permite navegar entre recursos y
+                administrarlos.</li>
+              <li>Ejemplos de navegadores web: 
+                <ul>
+                  <li>Google Chrome</li>
+                  <li>Mozilla Firefox</li>
+                  <li>Internet Explorer | Edge</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="state 1">
+        <div class="titled-slide">
+          <div>
+            <h2>Navegadores web</h2>
+          </div>
+          <div class="vertical-centered">
+            <ul class="spaced">
+              <li>Si bien las especificaciones <span>web</span> son de estándar abierto y
+                establecidos por la <span>W3C</span>, hay <span>diferencias</span> entre <span>navegadores web</span>.</li>
+              <li>Proveen distinto <span>nivel de soporte</span> de tecnologías <span>web</span>.</li>
+              <li>Muestran elementos de forma distinta.</li>
+              <li>Ofrecen <span>features</span> distintas.</li>
+            </ul>
+            <div class="highlight">
+              <p>El hecho de que existan diferencias entre navegadores web, hace 
+              difícil el desarrollo web.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="7" class="slide">
+      <div class="state 0">
+        <div class="titled-slide">
+          <div>
+            <h2>Desarrollo web</h2>
+          </div>
+          <div class="vertical-centered">
+            <p>El <span>desarrollo web</span> define la creación de sitios <span>web</span>. Para conseguirlo se
+              hace uso de tecnologías de <span>software</span> del lado del <span>servidor</span> y del <span>cliente</span>
+              a fin de permitir a un usuario realizar determinadas <span>tareas</span> o <span>recibir
+              información</span>.</p>
+            <script src="https://blog.codeanalogies.com/wp-content/plugins/h5p/h5p-php-library/js/h5p-resizer.js" charset="UTF-8"></script>
+            <iframe src="https://blog.codeanalogies.com/wp-admin/admin-ajax.php?action=h5p_embed&id=1" width="400" height="300" frameborder="0"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="8" class="slide">
+      <div class="state 0">
+        <div class="titled-slide">
+          <div>
+            <h1>Contenidos</h1>
+          </div>
+          <div class="vertical-centered">
+            <ol class="contents grey">
+              <li>Internet y la web</li>
+              <li class="normal">HTML</li>
+              <li>CSS</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="9" class="slide">
+      <div class="state 0">
+        <div class="titled-slide">
+          <div>
+            <h2>HTML</h2>
+          </div>
+          <div class="vertical-spaced-evenly">
+            <div class="horizontal-centered"><h3 class="italic"><span>H</span>yper<span>t</span>ext <span>M</span>arkup <span>L</span>anguage</h3></div>
+            <p>Lenguaje de <span>marcado</span> estándar para la creación de páginas y
+              aplicaciones web. Permite definir la <span>estructura</span> y <span>contenido</span> de la
+              página/app.</p>
+            <ul class="spaced">
+              <li>Permite texto con <span>hipervínculos</span> a otros documentos.</li>
+              <li>Permite darle <span>atributos adicionales</span> al contenido del documento.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="10" class="slide">
+      <div class="state 0">
+        <div class="titled-slide">
+          <div>
+            <h2>Etiquetas HTML</h2>
+          </div>
+          <div class="vertical-centered">
+            <ul class="spaced">
+              <li>Cada porción de contenido se puede escribir entre <span>etiquetas (tags)</span> HTML.</li>
+              <li>Distintos tipos de <span>etiquetas</span> producen <span>outputs</span> o elementos
+                distintos.</li>
+              <li>Permiten a su vez organizar el contenido dentro del documento.</li>
+              <li>Tienen una versión de <span>apertura</span> y una de <span>clausura</span>, con algunas
+                excepciones.</li>
+            </ul>
+            <div class="horizontal-centered">
+              <span class="code-text">
+                &lt;p&gt;Esto es un párrafo&lt;/p&gt;
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="11" class="slide">
+      <div class="state 0">
+        <div class="titled-slide">
+          <div>
+            <h2>Ejemplos de etiquetas</h2>
+          </div>
+          <div id="html" class="code-example">
+            <div class="code-text html-1">
+              <div>
+                &lt;p&gt;Etiqueta para un párrafo.&lt;/p&gt;
+              </div>
+              <div>
+                &lt;h1&gt;Etiqueta para un heading.&lt;/h1&gt;
+              </div>
+              <div>
+                &lt;h2&gt;Etiqueta para un heading.&lt;/h2&gt;
+              </div>
+              <div>
+                &lt;h3&gt;Etiqueta para un heading.&lt;/h3&gt;
+              </div>
+              <div>
+                &lt;h6&gt;Etiqueta para un heading.&lt;/h6&gt;
+              </div>
+              <div>
+                &lt;a href=""&gt;Etiqueta para un hipervínculo.&lt;/a&gt;
+              </div>
+            </div>
+            <div class="result html-1">
+              <div>
+                <p>Etiqueta para un párrafo.</p>
+              </div>
+              <div>
+                <h1>Etiqueta para un heading.</h1>
+              </div>
+              <div>
+                <h2>Etiqueta para un heading.</h2>
+              </div>
+              <div>
+                <h3>Etiqueta para un heading.</h3>
+              </div>
+              <div>
+                <h6>Etiqueta para un heading.</h6>
+              </div>
+              <div>
+                <a href="">Etiqueta para un hipervínculo.</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="12" class="slide">
+      <div class="state 0">
+        <div class="titled-slide">
+          <div>
+            <h2>Atributos</h2>
+          </div>
+          <div class="vertical-centered">
+            <div class="horizontal-centered">
+              <span class="code-text">
+                  &lt;a <span>href</span>="direccion_a_un_dominio"&gt;Etiqueta para un hipervínculo.&lt;/a&gt;
+              </span>
+            </div>
+            <p>Hay <span>atributos</span> específicos a <span>etiquetas</span>, como <span>href</span> de <span>a</span>.</p>
+            <p>Otro ejemplo de <span>etiquetas</span> con atributos (en este caso no únicos) 
+              son las <span>imágenes</span>:</p>
+            <div class="horizontal-centered">
+              <span class="code-text">
+                  &lt;img <span>src</span>="direccion_a_foto.png"&gt;
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="state 1">
+        <div class="titled-slide">
+          <div>
+            <h2>Atributos</h2>
+          </div>
+          <div class="vertical-centered">
+            <p>Pero también hay <span>atributos globales</span>, donde destacan:</p>
+            <ul class="spaced">
+              <li><span>id</span>: permite identificar un elemento de forma <span>única</span>; no pueden
+                haber dos elementos con el mismo <span>id</span>.</li>
+              <li><span>class</span>: permite agregarle una categoría a un elemento, que
+                puede ser compartida por varios elementos más.</li>
+            </ul>
+            <div class="code-text">
+              <div class="horizontal-centered">
+                <div>
+                  <div>
+                    &lt;p <span>id="primer" class="magenta"</span>&gt; Párrafo magenta &lt;/p&gt;
+                  </div>
+                  <div>
+                    &lt;p <span>class="azul"</span>&gt; Párrafo azul &lt;/p&gt;
+                  </div>
+                  <div>
+                    &lt;p <span>class="magenta"</span>&gt; Párrafo magenta &lt;/p&gt;
+                  </div>
+                  <div>
+                    &lt;p <span>id="ultimo" class="azul"</span>&gt; Párrafo azul &lt;/p&gt;
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="13" class="slide">
+      <div class="state 0">
+        <div class="titled-slide">
+          <div><h2>Anidación de elementos HTML</h2></div>
+          <div class="vertical-centered">
+            <p>Es posible <span>anidar tags</span> de HTML dentro de otros tags:</p>
+            <div class="horizontal-centered">
+              <div>
+                <div class="code-text horizontal-centered">
+                  <p>
+                    &lt;a href="https://www.wikipedia.org/"&gt;&lt;img src="wikilogo.svg"&gt;&lt;/a&gt;
+                  </p>
+                </div>
+                <div>
+                  <a href="https://www.wikipedia.org/" class="horizontal-centered">
+                    <img id="wikilogo" src="./Assets/wikilogo.svg">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="state 1">
+        <div class="titled-slide">
+          <div><h2>Anidación de elementos HTML</h2></div>
+          <div class="vertical-centered">
+            <p>Al crecer el documento, se hace necesario <span>separar</span> los distintos
+            <span>conjuntos de elementos</span> que lo componen. Para este fin existe la etiqueta
+            <span>div</span>:
+
+            <div class="horizontal-centered">
+              <div class="code-text">
+                <div>
+                    &lt;div class="parrafos"&gt;
+                </div>
+                <div>
+                    &nbsp;&nbsp;&lt;p&gt; Párrafo 1 &lt;/p&gt;
+                </div>
+                <div>
+                    &nbsp;&nbsp;&lt;p&gt; Párrafo 2 &lt;/p&gt;
+                </div>
+                <div>
+                    &nbsp;&nbsp;&lt;p&gt; Párrafo 3 &lt;/p&gt;
+                </div>
+                <div>
+                    &lt;/div&gt;
+                </div>
+              </div>
+            </div>
+          </p>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="14" class="slide">
+      <div class="state 0">
+        <div class="titled-slide">
+          <div><h2>Estructura de un HTML</h2></div>
+          <div id="html-structure" class="code-example">
+            <div class="code-text">
+              <div>
+                &lt;!DOCTYPE html&gt;
+              </div>
+              <div>
+                &lt;html&gt;
+              </div>
+              <div>
+                &nbsp;&nbsp;&lt;head&gt;
+              </div>
+              <div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Page Title&lt;/title&gt;
+              </div>
+              <div>
+                &nbsp;&nbsp;&lt;/head&gt;
+              </div>
+              <div>
+                &nbsp;&nbsp;&lt;body&gt;
+              </div>
+              <div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Homepage Headline&lt;/h1&gt;
+              </div>
+              <div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;This is a paragraph.&lt;/p&gt;
+              </div>
+              <div>
+                &nbsp;&nbsp;&lt;/body&gt;
+              </div>
+              <div>
+                &lt;/html&gt;
+              </div>
+            </div>
+            <div class="result">
+              <img src="./Assets/example.png">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="state 1">
+        <div class="titled-slide html-structure">
+          <div><h2>Estructura de un HTML</h2></div>
+          <div id="html-structure" class="code-example">
+            <div class="code-text">
+              <div>
+                <span>&lt;!DOCTYPE html&gt;</span>
+              </div>
+              <div>
+                &lt;html&gt;
+              </div>
+              <div>
+                &nbsp;&nbsp;&lt;head&gt;
+              </div>
+              <div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Page Title&lt;/title&gt;
+              </div>
+              <div>
+                &nbsp;&nbsp;&lt;/head&gt;
+              </div>
+              <div>
+                &nbsp;&nbsp;&lt;body&gt;
+              </div>
+              <div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Homepage Headline&lt;/h1&gt;
+              </div>
+              <div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;This is a paragraph.&lt;/p&gt;
+              </div>
+              <div>
+                &nbsp;&nbsp;&lt;/body&gt;
+              </div>
+              <div>
+                &lt;/html&gt;
+              </div>
+            </div>
+            <div class="result">
+              <img src="./Assets/example.png">
+            </div>
+          </div>
+          <div class="horizontal-centered">
+            <div>
+              <p><span>Doctype</span> es un tag que informa al <span>navegador</span>
+              qué <span>versión</span> de <span>HTML</span> utiliza el documento. En este caso utilizamos
+              la versión más reciente: <span>HTML5</span>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="state 2">
+        <div class="titled-slide html-structure">
+          <div><h2>Estructura de un HTML</h2></div>
+          <div id="html-structure" class="code-example">
+            <div class="code-text">
+              <div>
+                &lt;!DOCTYPE html&gt;
+              </div>
+              <div>
+                <span>&lt;html&gt;</span>
+              </div>
+              <div>
+                &nbsp;&nbsp;&lt;head&gt;
+              </div>
+              <div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Page Title&lt;/title&gt;
+              </div>
+              <div>
+                &nbsp;&nbsp;&lt;/head&gt;
+              </div>
+              <div>
+                &nbsp;&nbsp;&lt;body&gt;
+              </div>
+              <div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Homepage Headline&lt;/h1&gt;
+              </div>
+              <div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;This is a paragraph.&lt;/p&gt;
+              </div>
+              <div>
+                &nbsp;&nbsp;&lt;/body&gt;
+              </div>
+              <div>
+                <span>&lt;/html&gt;</span>
+              </div>
+            </div>
+            <div class="result">
+              <img src="./Assets/example.png">
+            </div>
+          </div>
+          <div class="horizontal-centered">
+            <div>
+              <p><span>html</span> es el tag que <span>contiene a todos los demás tags</span>,
+                por lo que se le considera la <span>raíz</span> del documento. Se agrupan sus <span>"hijos"</span>
+                dentro de 2 tags: <span>head</span> y <span>body</span>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="state 3">
+        <div class="titled-slide html-structure">
+          <div><h2>Estructura de un HTML</h2></div>
+          <div id="html-structure" class="code-example">
+            <div class="code-text">
+              <div>
+                &lt;!DOCTYPE html&gt;
+              </div>
+              <div>
+                &lt;html&gt;
+              </div>
+              <div>
+                <span>&nbsp;&nbsp;&lt;head&gt;</span>
+              </div>
+              <div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Page Title&lt;/title&gt;
+              </div>
+              <div>
+                <span>&nbsp;&nbsp;&lt;/head&gt;</span>
+              </div>
+              <div>
+                &nbsp;&nbsp;&lt;body&gt;
+              </div>
+              <div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Homepage Headline&lt;/h1&gt;
+              </div>
+              <div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;This is a paragraph.&lt;/p&gt;
+              </div>
+              <div>
+                &nbsp;&nbsp;&lt;/body&gt;
+              </div>
+              <div>
+                &lt;/html&gt;
+              </div>
+            </div>
+            <div class="result">
+              <img src="./Assets/example.png">
+            </div>
+          </div>
+          <div class="horizontal-centered">
+            <div>
+              <p>El tag <span>head</span> contiene a todos los <span>elementos HTML</span>
+                que <span>no son visibles</span> directamente en el navegador. Es decir, 
+                archivos de <span>metadata</span>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="state 4">
+        <div class="titled-slide html-structure">
+          <div><h2>Estructura de un HTML</h2></div>
+          <div id="html-structure" class="code-example">
+            <div class="code-text">
+              <div>
+                &lt;!DOCTYPE html&gt;
+              </div>
+              <div>
+                &lt;html&gt;
+              </div>
+              <div>
+                &nbsp;&nbsp;&lt;head&gt;
+              </div>
+              <div>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;</span>Page Title<span>&lt;/title&gt;</span>
+              </div>
+              <div>
+                &nbsp;&nbsp;&lt;/head&gt;
+              </div>
+              <div>
+                &nbsp;&nbsp;&lt;body&gt;
+              </div>
+              <div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Homepage Headline&lt;/h1&gt;
+              </div>
+              <div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;This is a paragraph.&lt;/p&gt;
+              </div>
+              <div>
+                &nbsp;&nbsp;&lt;/body&gt;
+              </div>
+              <div>
+                &lt;/html&gt;
+              </div>
+            </div>
+            <div class="result">
+              <img src="./Assets/example.png">
+            </div>
+          </div>
+          <div class="horizontal-centered">
+            <div>
+              <p>El tag <span>title</span> le entrega al <span>navegador</span> el <span>nombre
+                del documento</span>. Esto permite que la pestaña asociada al documento
+                lleve su nombre de título, como también facilita que el sitio sea encontrado
+                por los distintos motores de búsqueda, tales como Google.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="state 5">
+        <div class="titled-slide html-structure">
+          <div><h2>Estructura de un HTML</h2></div>
+          <div id="html-structure" class="code-example">
+            <div class="code-text">
+              <div>
+                &lt;!DOCTYPE html&gt;
+              </div>
+              <div>
+                &lt;html&gt;
+              </div>
+              <div>
+                &nbsp;&nbsp;&lt;head&gt;
+              </div>
+              <div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Page Title&lt;/title&gt;
+              </div>
+              <div>
+                &nbsp;&nbsp;&lt;/head&gt;
+              </div>
+              <div>
+                <span>&nbsp;&nbsp;&lt;body&gt;</span>
+              </div>
+              <div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Homepage Headline&lt;/h1&gt;
+              </div>
+              <div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;This is a paragraph.&lt;/p&gt;
+              </div>
+              <div>
+                <span>&nbsp;&nbsp;&lt;/body&gt;</span>
+              </div>
+              <div>
+                &lt;/html&gt;
+              </div>
+            </div>
+            <div class="result">
+              <img src="./Assets/example.png">
+            </div>
+          </div>
+          <div class="horizontal-centered">
+            <div>
+              <p> Por último, el tag <span>body contiene todo el contenido visible </span> del documento.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="15" class="slide">
+      <div class="state 0">
+        <div class="titled-slide">
+          <div>
+            <h2>DOM</h2>
+          </div>
+          <div>
+            <div class="horizontal-centered">
+              <h3 class="italic"><span>D</span>ocument <span>O</span>bject <span>M</span>odel</h3>
+            </div>
+            <div class="horizontal-centered">
+              <img id="dom" src="./Assets/dom.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="16" class="slide">
+      <div class="state 0">
+        <div class="titled-slide">
+          <div>
+            <h1>Contenidos</h1>
+          </div>
+          <div class="vertical-centered">
+            <ol class="contents grey">
+              <li>Internet y la web</li>
+              <li>HTML</li>
+              <li class="normal">CSS</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="17" class="slide">
+      <div class="state 0">
+        <div class="titled-slide">
+          <div>
+            <h2>CSS</h2>
+          </div>
+          <div>
+            <div class="horizontal-centered">
+              <h3 class="italic"><span>C</span>ascading <span>S</span>tyle <span>S</span>heets</h3>
+            </div>
+            <p>Es el lenguaje de <span>diseño gráfico</span> estándar para la creación de páginas y
+                aplicaciones web. Permite alterar el <span>estilo</span> y <span>layout</span> de una página/app.</p>
+            <ul class="spaced">
+              <li>Funciona declarando <span>estilo</span> a un tipo de etiqueta, o grupo de
+                  etiquetas.</li>
+              <li>Permite especificar mediante el nombre de etiquetas <span>HTML</span> y
+                  mediante los atributos <span>id</span> y <span>class</span>.</li>
+              <li>Existen <span>muchos</span> atributos de <span>estilo</span> para especificar, y aún más
+                  valores que darles.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="state 1">
+        <div class="titled-slide">
+          <div>
+            <h2>CSS</h2>
+          </div>
+          <div class="vertical-centered">
+            <p>Sintáxis:</p>
+            <div class="horizontal-centered">
+              <div class="code-text big">
+                <div><span>selector</span> {</div>
+                <div>&nbsp;&nbsp;atributo: <span>valor</span>;</div>
+                <div>}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="18" class="slide">
+      <div class="state 0">
+        <div class="titled-slide">
+          <div>
+            <h2>Ejemplos CSS</h2>
+          </div>
+          <div>
+            <div class="css">
+              <div class="css-html d5">
+                <div class="horizontal-centered">
+                  <p><span>HTML</span></p>
+                </div>
+                <div class="code-text">
+                  &lt;p <span>id="primer" class="magenta"</span>&gt; Párrafo magenta &lt;/p&gt;
+                </div>
+                <div class="code-text">
+                  &lt;p <span>class="azul"</span>&gt; Párrafo azul &lt;/p&gt;
+                </div>
+                <div class="code-text">
+                  &lt;p <span>class="magenta"</span>&gt; Párrafo magenta &lt;/p&gt;
+                </div>
+                <div class="code-text">
+                  &lt;p <span>id="ultimo" class="azul"</span>&gt; Párrafo azul &lt;/p&gt;
+                </div>
+              </div>
+              <div class="css-css d5">
+                <div class="horizontal-centered">
+                  <p><span>CSS</span></p>
+                </div>
+                <div class="code-text">
+                  <div><span>p</span> {</div>
+                  <div>&nbsp;&nbsp;font-size: <span>20px</span>;</div>
+                  <div>}</div>
+                </div>
+                <div class="code-text">
+                  <div><span>.magenta</span> {</div>
+                  <div>&nbsp;&nbsp;color: <span>magenta</span>;</div>
+                  <div>}</div>
+                </div>
+                <div class="code-text">
+                  <div><span>.azul</span> {</div>
+                  <div>&nbsp;&nbsp;color: <span>blue</span>;</div>
+                  <div>}</div>
+                </div>
+                <div class="code-text">
+                  <div><span>#ultimo</span> {</div>
+                  <div>&nbsp;&nbsp;text-decoration: <span>underline</span>;</div>
+                  <div>&nbsp;&nbsp;font-size: <span>24px</span>;</div>
+                  <div>}</div>
+                </div>
+              </div>
+              <div class="css-result d5">
+                <div class="horizontal-centered">
+                  <p><span>Resultado</span></p>
+                </div>
+                <p id="primer" class="magenta">Párrafo magenta</p>
+                <p class="azul">Párrafo azul</p>
+                <p class="magenta">Párrafo magenta</p>
+                <p id="ultimo" class="azul">Párrafo azul</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="19" class="slide">
+      <div class="state 0">
+        <div class="titled-slide">
+          <div>
+            <h2>¿Cascading?</h2>
+          </div>
+          <div class="vertical-centered">
+            <p>
+              Dado que las <span>etiquetas</span> pueden <span>anidarse</span>, y estas
+              pueden contar con distintos atributos de <span>estilos</span>, se aplican los
+              <span>estilos</span> en forma de <span>cascada</span>. Es decir,
+              se parte por la <span>regla más general</span> hasta la <span>más específica</span>.
+              Es decir, <span>predomina la regla más específica</span>. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="20" class="slide">
+      <div class="state 0">
+        <div class="titled-slide">
+          <div>
+            <h2>Ejemplos CSS 2</h2>
+          </div>
+          <div>
+            <div class="css">
+              <div class="css-html">
+                <div class="horizontal-centered">
+                  <p><span>HTML</span></p>
+                </div>
+                <div class="code-text">
+                  &lt;div class="magenta"&gt;
+                </div>
+                <div class="code-text">
+                    &nbsp;&nbsp;&lt;p class="azul"&gt;
+                </div>
+                <div class="code-text">
+                    &nbsp;&nbsp;&nbsp;&nbsp;¿Qué color de fondo tendré?
+                </div>
+                <div class="code-text">
+                    &nbsp;&nbsp;&lt;/p&gt;
+                </div>
+                <div class="code-text">
+                    &lt;/div&gt;
+                </div>
+              </div>
+              <div class="css-css">
+                <div class="horizontal-centered">
+                  <p><span>CSS</span></p>
+                </div>
+                <div class="code-text">
+                  <div><span>.magenta</span> {</div>
+                  <div>&nbsp;&nbsp;background: <span>magenta</span>;</div>
+                  <div>}</div>
+                </div>
+                <div class="code-text">
+                  <div><span>.azul</span> {</div>
+                  <div>&nbsp;&nbsp;background: <span>blue</span>;</div>
+                  <div>}</div>
+                </div>
+              </div>
+              <div class="css-result">
+                <div class="horizontal-centered">
+                  <p><span>Resultado</span></p>
+                </div>
+                <div class="horizontal-centered">
+                  <p>¿?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="state 1">
+        <div class="titled-slide">
+          <div>
+            <h2>Ejemplos CSS 2</h2>
+          </div>
+          <div>
+            <div class="css">
+              <div class="css-html">
+                <div class="horizontal-centered">
+                  <p><span>HTML</span></p>
+                </div>
+                <div class="code-text">
+                  &lt;div class="magenta"&gt;
+                </div>
+                <div class="code-text">
+                    &nbsp;&nbsp;&lt;p class="azul"&gt;
+                </div>
+                <div class="code-text">
+                    &nbsp;&nbsp;&nbsp;&nbsp;¿Qué color de fondo tendré?
+                </div>
+                <div class="code-text">
+                    &nbsp;&nbsp;&lt;/p&gt;
+                </div>
+                <div class="code-text">
+                    &lt;/div&gt;
+                </div>
+              </div>
+              <div class="css-css">
+                <div class="horizontal-centered">
+                  <p><span>CSS</span></p>
+                </div>
+                <div class="code-text">
+                  <div><span>p</span> {</div>
+                  <div>&nbsp;&nbsp;color: <span>white</span>;</div>
+                  <div>}</div>
+                </div>
+                <div class="code-text">
+                  <div><span>.magenta</span> {</div>
+                  <div>&nbsp;&nbsp;background: <span>magenta</span>;</div>
+                  <div>}</div>
+                </div>
+                <div class="code-text">
+                  <div><span>.azul</span> {</div>
+                  <div>&nbsp;&nbsp;background: <span>blue</span>;</div>
+                  <div>}</div>
+                </div>
+              </div>
+              <div class="css-result">
+                <div class="horizontal-centered">
+                  <p><span>Resultado</span></p>
+                </div>
+                <div class="horizontal-centered">
+                  <p class="blue-background">¿Qué color de fondo tendré?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="21" class="slide">
+      <div class="state 0">
+        <div class="titled-slide">
+          <div>
+            <h2>¡Cascading!</h2>
+          </div>
+          <div class="vertical-centered">
+            <p>
+              Podemos <span>sacar provecho</span> de la <span>secuencia de cascada</span> mediante la cual se aplican los estilos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="22" class="slide">
+      <div class="state 0">
+        <div class="titled-slide">
+          <div>
+            <h2>Ejemplos CSS 3</h2>
+          </div>
+          <div>
+            <div class="css">
+              <div class="css-html">
+                <div class="horizontal-centered">
+                  <p><span>HTML</span></p>
+                </div>
+                <div class="code-text">
+                  &lt;div class="contenedor-imagen"&gt;
+                </div>
+                <div class="code-text">
+                  &nbsp;&nbsp;&lt;img src="wikilogo.svg"&gt;
+                </div>
+                <div class="code-text">
+                  &lt;/div&gt;
+                </div>
+              </div>
+              <div class="css-css">
+                <div class="horizontal-centered">
+                  <p><span>CSS</span></p>
+                </div>
+                <div class="code-text">
+                  <div><span>.contenedor-imagen</span> {</div>
+                  <div>&nbsp;&nbsp;width: <span>200px</span>;</div>
+                  <div>&nbsp;&nbsp;height: <span>200px</span>;</div>
+                  <div>}</div>
+                </div>
+                <div class="code-text">
+                  <div><span>.contenedor-imagen img</span> {</div>
+                  <div>&nbsp;&nbsp;width: <span>100%</span>;</div>
+                  <div>&nbsp;&nbsp;height: <span>100%</span>;</div>
+                  <div>}</div>
+                </div>
+              </div>
+              <div class="css-result">
+                <div class="horizontal-centered">
+                  <p><span>Resultado</span></p>
+                </div>
+                <div class="horizontal-centered">
+                  <div class="contenedor-imagen">
+                    <img src="./Assets/wikilogo.svg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="23" class="slide">
+      <div class="state 0">
+        <div class="titled-slide">
+          <div>
+            <h2>HTML + CSS</h2>
+          </div>
+          <div class="vertical-centered">
+            <div>
+              <p>Puede escribirse código CSS en el mismo documento HTML,
+                dentro del tag &lt;style&gt;:
+              </p>
+              <div class="horizontal-centered">
+                <div class="code-text">
+                  <div><span>&lt;style&gt;</span></div>
+                    <div>&nbsp;&nbsp;p {</div>
+                    <div>&nbsp;&nbsp;&nbsp;&nbsp;font-size: 20px;</div>
+                    <div>&nbsp;&nbsp;}</div>
+                  <div><span>&lt;/style&gt;</span></div>
+                </div>
+              </div>
+              <p>O bien pueden importarse desde un archivo con extensión .css:</p>
+              <div class="horizontal-centered">
+                <div class="code-text">
+                  <div>&lt;<span>link</span> href="style.css" rel="stylesheet" type="text/css"&gt;</div>
+                </div>
+              </div>
+              <br>
+              <div class="highlight">
+                <p>¡Ojo con importar en archivo dentro de la etiqueta &lt;head&gt;!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="24" class="slide">
+      <div class="state 0">
+        <div class="titled-slide">
+          <div><h2>Un consejo</h2></div>
+          <div class="vertical-centered">
+            <div class="horizontal-centered">
+              <ul class="spaced">
+                <li>Ningún programador sabe todas las funcionalidades de un lenguaje de memoria.</li>
+                <li>Un buen desarrollador aprende <span>cómo buscar soluciones en internet</span>.</li>
+                <li>¡Ingresar la pregunta correcta en Google es un arte!</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="25" class="slide">
+        <div class="state 0">
+          <div class="titled-slide">
+            <div><h1>Actividad</h1></div>
+            <div class="vertical-centered">
+              <div class="horizontal-centered">
+                <div>
+                  <p>Modifique el template de HTML que se encuentra en el repositorio
+                    de manera que muestre lo siguiente:
+                  </p>
+                </div>
+                <ul class="spaced smaller">
+                  <li>Mostrar las imágenes de los <span>gráficos</span> resultantes de la <span>regresión lineal</span>,
+                    <span>árbol de decision</span> y <span>matriz de confusión</span>.</li>
+                  <li>Antes de cada gráfico debe ir un <span>título</span> de qué está graficando.</li>
+                  <li>Las imagenes deben llevar una breve <span>descripción</span> de qué representan. </li>
+                  <li>Agregue un <span>hipervínculo</span> a un sitio que explique con mayor profundidad el algoritmo/gráfico/concepto correspondiente.</li>
+                  <li>El título y las imágenes deben ir centralizadas.</li>
+                  <li>La descripción debe estar justificada.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- 
+
+  <div id="17" class="slide">
+    <div class="state 0">
+      <h2>Contenidos</h2>
+      <ul>
+        <li>Internet y la web</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>SVG</li>
+        <li>Javascript</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="18" class="slide">
+    <div class="state 0">
+      <h2>SVG</h2>
+      <div>Scalable Vector Graphics</div>
+      <p>Formato de imágenes vectoriales bidimensionales.</p>
+    </div>
+    <div class="state 1">
+      <h2>SVG</h2>
+      <div>Scalable Vector Graphics</div>
+      <p>Formato de imágenes vectoriales bidimensionales.</p>
+      <ul>
+        <li>Al igual que HTML, es un formato basado en etiquetas (familia XML).</li>
+        <li>Especificación de estandar abierto, desarrollado por la W3C.</li>
+        <li>Soportado por todos los navegadores modernos.</li>
+        <li>Permite soporte para interactividad y animación.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="19" class="slide">
+    <div class="state 0">
+      <h2>Ejemplo SVG</h2>
+      <div id="svg" class="code-example">
+        <div class="code">
+          <div>
+            &lt;svg width="500" height="500"&gt;
+          </div>
+          <div>
+              &lt;rect x="0" y="0" width="500" height="500" /&gt;
+          </div>
+          <div>
+            &lt;/svg&gt;
+          </div>
+        </div>
+        <div class="result">
+          <svg width="500" height="500">
+            <rect x="0" y="0" width="500" height="500" />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="state 1">
+      <h2>Ejemplo SVG</h2>
+      <div id="svg" class="code-example">
+        <div class="code">
+          <div>
+            &lt;svg width="500" height="500"&gt;
+          </div>
+          <div>
+              &lt;rect x="0" y="0" width="500" height="500" fill="none" /&gt;
+          </div>
+          <div>
+            &lt;/svg&gt;
+          </div>
+        </div>
+        <div class="result">
+          <svg width="500" height="500">
+            <rect x="0" y="0" width="500" height="500" fill="lightskyblue" />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="state 2">
+      <h2>Ejemplo SVG</h2>
+      <div id="svg" class="code-example">
+        <div class="code">
+          <div>
+            &lt;svg width="500" height="500"&gt;
+          </div>
+          <div>
+              &lt;rect x="0" y="0" width="500" height="500" fill="none" /&gt;
+          </div>
+          <div>
+            &lt;/svg&gt;
+          </div>
+        </div>
+        <div class="result">
+          <svg width="500" height="500">
+            <rect x="0" y="0" width="500" height="500" fill="lightskyblue" />
+            <rect x="50" y="50" width="200" height="200" fill="pink"/>
+            <rect x="250" y="250" width="200" height="200" fill="pink"/>
+            <rect x="250" y="50" width="200" height="200" fill="white" />
+            <rect x="50" y="250" width="200" height="200" fill="white" />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="state 3">
+      <h2>Ejemplo SVG</h2>
+      <div id="svg" class="code-example">
+        <div class="code">
+          <div>
+            &lt;svg width="500" height="500"&gt;
+          </div>
+          <div>
+              &lt;rect x="0" y="0" width="500" height="500" fill="none" /&gt;
+          </div>
+          <div>
+            &lt;/svg&gt;
+          </div>
+        </div>
+        <div class="result">
+          <svg width="500" height="500">
+            <rect x="0" y="0" width="500" height="500" fill="lightskyblue" />
+            <rect x="50" y="50" width="200" height="200" fill="pink"/>
+            <circle cx="150" cy="150" r="25" fill="lightskyblue"/>
+            <rect x="250" y="250" width="200" height="200" fill="pink"/>
+            <circle cx="350" cy="350" r="25" fill="lightskyblue"/>
+            <rect x="250" y="50" width="200" height="200" fill="white" />
+            <circle cx="350" cy="150" r="25" fill="lightskyblue"/>
+            <rect x="50" y="250" width="200" height="200" fill="white" />
+            <circle cx="150" cy="350" r="25" fill="lightskyblue"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="state 4">
+      <h2>Ejemplo SVG</h2>
+      <div id="svg" class="code-example">
+        <div class="code">
+          <div>
+            &lt;svg width="500" height="500"&gt;
+          </div>
+          <div>
+              &lt;rect x="0" y="0" width="500" height="500" fill="none" /&gt;
+          </div>
+          <div>
+            &lt;/svg&gt;
+          </div>
+        </div>
+        <div class="result">
+          <svg width="500" height="500">
+            <rect x="0" y="0" width="500" height="500" fill="lightskyblue" />
+            <rect x="50" y="50" width="200" height="200" fill="pink"/>
+            <path d="M 150 75 L 75 150 L 150 225 L 225 150 Z" fill="white"/>
+            <circle cx="150" cy="150" r="25" fill="lightskyblue"/>
+            <rect x="250" y="250" width="200" height="200" fill="pink"/>
+            <path d="M 350 275 L 275 350 L 350 425 L 425 350 Z" fill="white"/>
+            <circle cx="350" cy="350" r="25" fill="lightskyblue"/>
+            <rect x="250" y="50" width="200" height="200" fill="white" />
+            <circle cx="350" cy="150" r="25" fill="lightskyblue"/>
+            <rect x="50" y="250" width="200" height="200" fill="white" />
+            <circle cx="150" cy="350" r="25" fill="lightskyblue"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="20" class="slide">
+      <div class="state 0">
+      </div>
+    </div> -->
+
+    <div id="slide_number">
+      <h2 id="number">1</h2>
+    </div>
+  </div>
+  
+</body>
+</html>
