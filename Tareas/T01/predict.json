@@ -1,0 +1,523 @@
+{
+  "127": {
+    "class": 1,
+    "sepal_length": 0.4,
+    "sepal_width": 6.0,
+    "petal_length": 4.6,
+    "petal_width": 9.0
+  },
+  "156": {
+    "class": 1,
+    "sepal_length": 0.8,
+    "sepal_width": 8.0,
+    "petal_length": 1.2
+  },
+  "81": {
+    "class": 1,
+    "sepal_length": 5.5,
+    "sepal_width": 2.4,
+    "petal_length": 3.7,
+    "petal_width": 1.0
+  },
+  "70": {
+    "class": 1,
+    "sepal_length": 5.9,
+    "sepal_width": 3.2,
+    "petal_length": 4.8,
+    "petal_width": 1.8
+  },
+  "77": {
+    "class": 1,
+    "sepal_length": 6.7,
+    "sepal_width": 3.0,
+    "petal_length": 5.0,
+    "petal_width": 1.7
+  },
+  "71": {
+    "class": 1,
+    "sepal_length": 5.3,
+    "sepal_width": 1.5,
+    "petal_length": 5.2,
+    "petal_width": -6.8
+  },
+  "111": {
+    "class": 2,
+    "sepal_length": -0.6,
+    "sepal_width": 4.3,
+    "petal_length": 5.7,
+    "petal_width": 7.9
+  },
+  "144": {
+    "class": 2,
+    "sepal_length": 6.7,
+    "sepal_width": 3.3,
+    "petal_length": 5.7,
+    "petal_width": 2.5
+  },
+  "27": {
+    "class": 0,
+    "sepal_length": 5.2,
+    "sepal_width": 3.5,
+    "petal_length": 1.5,
+    "petal_width": 0.2
+  },
+  "35": {
+    "class": 0,
+    "sepal_length": 5.0,
+    "sepal_width": 3.2,
+    "petal_length": 1.2,
+    "petal_width": 0.2
+  },
+  "75": {
+    "class": 1,
+    "sepal_length": 6.6,
+    "sepal_width": 3.0,
+    "petal_length": 4.4,
+    "petal_width": 1.4
+  },
+  "3": {
+    "class": 0,
+    "sepal_length": 4.6,
+    "sepal_width": 3.1,
+    "petal_length": 1.5,
+    "petal_width": 0.2
+  },
+  "65": {
+    "class": 1,
+    "sepal_length": 6.7,
+    "sepal_width": 3.1,
+    "petal_length": 4.4,
+    "petal_width": 1.4
+  },
+  "39": {
+    "class": 2,
+    "sepal_length": 8.0,
+    "sepal_width": 7.0,
+    "petal_length": -9.6,
+    "petal_width": 5.2
+  },
+  "15": {
+    "class": 0,
+    "sepal_length": 5.7,
+    "sepal_width": 4.4,
+    "petal_length": 1.5,
+    "petal_width": 0.4
+  },
+  "8": {
+    "class": 0,
+    "sepal_length": 4.4,
+    "sepal_width": 2.9,
+    "petal_length": 1.4,
+    "petal_width": 0.2
+  },
+  "113": {
+    "class": 2,
+    "sepal_length": 5.7,
+    "sepal_width": 2.5,
+    "petal_length": 5.0,
+    "petal_width": 2.0
+  },
+  "23": {
+    "class": 0,
+    "sepal_length": 5.1,
+    "sepal_width": 3.3,
+    "petal_length": 1.7,
+    "petal_width": 0.5
+  },
+  "74": {
+    "class": 1,
+    "sepal_length": 6.4,
+    "sepal_width": 2.9,
+    "petal_length": 4.3,
+    "petal_width": 1.3
+  },
+  "138": {
+    "class": 0,
+    "sepal_length": -4.2,
+    "sepal_width": 9.8,
+    "petal_length": 8.7,
+    "petal_width": 8.2
+  },
+  "117": {
+    "class": 2,
+    "sepal_length": 0.6,
+    "sepal_width": -0.7,
+    "petal_length": 7.1,
+    "petal_width": 7.1
+  },
+  "18": {
+    "class": 0,
+    "sepal_length": 5.7,
+    "sepal_width": 3.8,
+    "petal_length": 1.7,
+    "petal_width": 0.3
+  },
+  "108": {
+    "class": 2,
+    "sepal_length": 7.6,
+    "sepal_width": 9.7,
+    "petal_length": -9.7,
+    "petal_width": 7.8
+  },
+  "120": {
+    "class": 0,
+    "sepal_length": 8.6,
+    "sepal_width": 0.6,
+    "petal_length": -6.8,
+    "petal_width": 9.3
+  },
+  "37": {
+    "class": 0,
+    "sepal_length": 0.1,
+    "sepal_width": -9.0,
+    "petal_length": 9.8,
+    "petal_width": 8.6
+  },
+  "96": {
+    "class": 0,
+    "sepal_length": 3.8,
+    "sepal_width": 5.1,
+    "petal_length": 1.2,
+    "petal_width": -2.2
+  },
+  "92": {
+    "class": 1,
+    "sepal_length": 5.8,
+    "sepal_width": 2.6,
+    "petal_length": 4.0,
+    "petal_width": 1.2
+  },
+  "67": {
+    "class": 1,
+    "sepal_length": 5.8,
+    "sepal_width": 2.7,
+    "petal_length": 4.1,
+    "petal_width": 1.0
+  },
+  "82": {
+    "class": 1,
+    "sepal_length": 5.8,
+    "sepal_width": 2.7,
+    "petal_length": 3.9,
+    "petal_width": 1.2
+  },
+  "80": {
+    "class": 1,
+    "sepal_length": 5.5,
+    "sepal_width": 2.4,
+    "petal_length": 3.8,
+    "petal_width": 1.1
+  },
+  "0": {
+    "class": 0,
+    "sepal_length": 7.2,
+    "sepal_width": 0.0,
+    "petal_length": 3.5,
+    "petal_width": 1.1
+  },
+  "51": {
+    "class": 1,
+    "sepal_length": 6.4,
+    "sepal_width": 3.2,
+    "petal_length": 4.5,
+    "petal_width": 1.5
+  },
+  "66": {
+    "class": 1,
+    "sepal_length": 5.6,
+    "sepal_width": 3.0,
+    "petal_length": 4.5,
+    "petal_width": 1.5
+  },
+  "115": {
+    "class": 2,
+    "sepal_length": 6.4,
+    "sepal_width": 3.2,
+    "petal_length": 5.3,
+    "petal_width": 2.3
+  },
+  "134": {
+    "class": 2,
+    "sepal_length": 6.1,
+    "sepal_width": 2.6,
+    "petal_length": 5.6,
+    "petal_width": 1.4
+  },
+  "56": {
+    "class": 1,
+    "sepal_length": 6.3,
+    "sepal_width": 3.3,
+    "petal_length": 4.7,
+    "petal_width": 1.6
+  },
+  "101": {
+    "class": 2,
+    "sepal_length": 5.8,
+    "sepal_width": 2.7,
+    "petal_length": 5.1,
+    "petal_width": 1.9
+  },
+  "12": {
+    "class": 0,
+    "sepal_length": 4.8,
+    "sepal_width": 3.0,
+    "petal_length": 1.4,
+    "petal_width": 0.1
+  },
+  "26": {
+    "class": 0,
+    "sepal_length": 5.0,
+    "sepal_width": 3.4,
+    "petal_length": 1.6,
+    "petal_width": 0.4
+  },
+  "102": {
+    "class": 0,
+    "sepal_length": -7.9,
+    "sepal_width": 3.0,
+    "petal_length": 1.3,
+    "petal_width": 3.7
+  },
+  "46": {
+    "class": 0,
+    "sepal_length": 5.1,
+    "sepal_width": 3.8,
+    "petal_length": 1.6,
+    "petal_width": 0.2
+  },
+  "110": {
+    "class": 2,
+    "sepal_length": 6.5,
+    "sepal_width": 3.2,
+    "petal_length": 5.1,
+    "petal_width": 2.0
+  },
+  "14": {
+    "class": 0,
+    "sepal_length": 5.8,
+    "sepal_width": 4.0,
+    "petal_length": 1.2,
+    "petal_width": 0.2
+  },
+  "42": {
+    "class": 0,
+    "sepal_length": 4.4,
+    "sepal_width": 3.2,
+    "petal_length": 1.3,
+    "petal_width": 0.2
+  },
+  "91": {
+    "class": 1,
+    "sepal_length": 6.1,
+    "sepal_width": 3.0,
+    "petal_length": 4.6,
+    "petal_width": 1.4
+  },
+  "43": {
+    "class": 0,
+    "sepal_length": 5.0,
+    "sepal_width": 3.5,
+    "petal_length": 1.6,
+    "petal_width": 0.6
+  },
+  "84": {
+    "class": 2,
+    "sepal_length": 7.6,
+    "sepal_width": 3.6,
+    "petal_length": -5.6,
+    "petal_width": 5.9
+  },
+  "119": {
+    "class": 2,
+    "sepal_length": 6.0,
+    "sepal_width": 2.2,
+    "petal_length": 5.0,
+    "petal_width": 1.5
+  },
+  "57": {
+    "class": 1,
+    "sepal_length": 4.9,
+    "sepal_width": 2.4,
+    "petal_length": 3.3,
+    "petal_width": 1.0
+  },
+  "48": {
+    "class": 0,
+    "sepal_length": 5.3,
+    "sepal_width": 3.7,
+    "petal_length": 1.5,
+    "petal_width": 0.2
+  },
+  "150": {
+    "class": 0,
+    "sepal_length": 8.8,
+    "sepal_width": -4.6,
+    "petal_length": 8.6,
+    "petal_width": 7.1
+  },
+  "141": {
+    "class": 2,
+    "sepal_length": 6.9,
+    "sepal_width": 3.1,
+    "petal_length": 5.1,
+    "petal_width": 2.3
+  },
+  "142": {
+    "class": 0,
+    "sepal_length": -1.8,
+    "sepal_width": 8.1,
+    "petal_length": 6.0,
+    "petal_width": 2.8
+  },
+  "40": {
+    "class": 2,
+    "sepal_length": 8.4,
+    "sepal_width": 3.6,
+    "petal_length": 3.8,
+    "petal_width": 9.5
+  },
+  "100": {
+    "class": 2,
+    "sepal_length": 6.3,
+    "sepal_width": 3.3,
+    "petal_length": 6.0,
+    "petal_width": 2.5
+  },
+  "139": {
+    "class": 1,
+    "sepal_length": 4.8,
+    "sepal_width": 9.5,
+    "petal_length": 0.3,
+    "petal_width": 6.4
+  },
+  "38": {
+    "class": 0,
+    "sepal_length": 4.4,
+    "sepal_width": 3.0,
+    "petal_length": 1.3,
+    "petal_width": 0.2
+  },
+  "50": {
+    "class": 0,
+    "sepal_length": 6.0,
+    "sepal_width": 4.7,
+    "petal_length": 7.5,
+    "petal_width": -3.4
+  },
+  "83": {
+    "class": 1,
+    "sepal_length": 6.0,
+    "sepal_width": 2.7,
+    "petal_length": 5.1,
+    "petal_width": 1.6
+  },
+  "36": {
+    "class": 1,
+    "sepal_length": 4.8,
+    "sepal_width": -1.2,
+    "petal_length": 8.9,
+    "petal_width": 0.5
+  },
+  "10": {
+    "class": 0,
+    "sepal_length": 5.4,
+    "sepal_width": 3.7,
+    "petal_length": 1.5,
+    "petal_width": 0.2
+  },
+  "121": {
+    "class": 2,
+    "sepal_length": 3.6,
+    "sepal_width": 4.2,
+    "petal_length": -1.2,
+    "petal_width": 2.2
+  },
+  "90": {
+    "class": 2,
+    "sepal_length": 8.2,
+    "sepal_width": 7.0,
+    "petal_length": 5.7,
+    "petal_width": 4.6
+  },
+  "41": {
+    "class": 0,
+    "sepal_length": 4.5,
+    "sepal_width": 2.3,
+    "petal_length": 1.3,
+    "petal_width": 0.3
+  },
+  "60": {
+    "class": 1,
+    "sepal_length": 8.4,
+    "petal_length": 7.9,
+    "petal_width": 4.5
+  },
+  "87": {
+    "class": 1,
+    "sepal_length": 6.3,
+    "sepal_width": 2.3,
+    "petal_length": 4.4,
+    "petal_width": 1.3
+  },
+  "31": {
+    "class": 1,
+    "sepal_length": 4.4,
+    "sepal_width": 3.4,
+    "petal_length": 9.3
+  },
+  "1": {
+    "class": 0,
+    "sepal_length": 4.9,
+    "sepal_width": 3.0,
+    "petal_length": 1.4,
+    "petal_width": 0.2
+  },
+  "104": {
+    "class": 2,
+    "sepal_length": 6.5,
+    "sepal_width": 3.0,
+    "petal_length": 5.8,
+    "petal_width": 2.2
+  },
+  "109": {
+    "class": 2,
+    "sepal_length": 7.2,
+    "sepal_width": 3.6,
+    "petal_length": 6.1,
+    "petal_width": 2.5
+  },
+  "76": {
+    "class": 1,
+    "sepal_length": 6.8,
+    "sepal_width": 2.8,
+    "petal_length": 4.8,
+    "petal_width": 1.4
+  },
+  "63": {
+    "class": 1,
+    "sepal_length": 6.1,
+    "sepal_width": 2.9,
+    "petal_length": 4.7,
+    "petal_width": 1.4
+  },
+  "30": {
+    "class": 0,
+    "sepal_length": 4.8,
+    "sepal_width": 3.1,
+    "petal_length": 1.6,
+    "petal_width": 0.2
+  },
+  "69": {
+    "class": 1,
+    "sepal_length": 5.6,
+    "sepal_width": 2.5,
+    "petal_length": 3.9,
+    "petal_width": 1.1
+  },
+  "5": {
+    "sepal_length": 9.7,
+    "sepal_width": 2.4,
+    "petal_length": -6.8,
+    "petal_width": 6.4
+  }
+}
