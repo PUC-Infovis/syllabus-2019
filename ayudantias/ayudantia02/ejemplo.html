@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ejemplos de Javascript</title>
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu" />
+  <link href="./assets/prism.css" rel="stylesheet"/>
+  <link href="./assets/style.css" rel="stylesheet"/>
+</head>
+<body>
+  <div id="container">
+    <div class="title">
+      <h1>Ejemplos Ayudantía 02</h1>
+    </div>
+
+    <div class="ejemplo">
+      <h3>Ejemplo 1:</h3>
+      <p>
+        Como podrán ver en el código de este documento, a continuación
+        se encuentra un botón declarado en HTML de la siguiente forma:
+      </p>
+      <pre><code class="language-markup">&lt;button onclick="updateCounter()">Aprétame!&lt;/button></code></pre>
+      <div class="horizontally-centered">
+        <div>
+          <button onclick="updateCounter()">Aprétame!</button>
+        </div>
+      </div>
+      <p>
+        No ocurre nada al apretar el botón. ¿O si? Abre la consola de 
+        tu navegador y presiona nuevamente el botón. Para abrir la consola
+        puedes hacer click derecho sobre la página y seleccionar inspeccionar página;
+        una de las pestañas corresponde a la consola.
+      </p>
+      <p>
+        Como se mencionó en la presentación, javascript es un lenguaje
+        interpretado por el navegador. La consola del navegador
+        es de cierta forma el terminal del navegador, la cual ejecuta
+        el código de javascript.
+      </p>
+      <p>
+        El atributo <span class="code">onclick</span> de HTML indica
+        que al ser clickeado el elemento, se ejecutará la función
+        de javascript indicada, en este caso <span class="code">updateCounter()</span>.
+      </p>
+      <p>
+        El código de esta función, que se encuentra en el archivo <span classs="code">ejemplo.js</span>,
+        es el siguiente:
+      </p>
+      <pre><code class="language-javascript">let counter = 0;
+
+function updateCounter(){
+  console.log(counter);
+  counter++;
+}</code></pre>
+    </div>
+
+    <div class="ejemplo">
+      <h3>Ejemplo 2:</h3>
+      <p>¡Veamos cómo javascript puede manipular el DOM!</p>
+      <div class="horizontally-centered">
+        <div>
+          <button onclick="showAndUpdateCounter()">Aprétame!</button>
+          <div>
+            Contador = <span id="counter">0</span>
+          </div>
+        </div>
+      </div>
+      <p>En este caso tenemos el siguiente código HTML y Javascript:</p>
+      <div class="split">
+        <div class="left">
+          <pre><code class="language-markup">&lt;button onclick="showAndUpdateCounter()">Aprétame!&lt;/button>
+&lt;div>
+  Contador = &lt;span id="counter">0&lt;/span>
+&lt;/div></code></pre>
+        </div>
+        <div class="right">
+            <pre><code class="language-javascript">function showAndUpdateCounter(){
+  document.getElementById('counter').innerHTML = counter;
+  updateCounter();
+}</code></pre>
+        </div>
+      </div>
+      <p>Mediante <span class="code">document</span> javascript accede al DOM,
+      y con la función <span class="code">getElementById()</span> se obtiene
+      al elemento con dicho id. Luego, el atributo <span class="code">innerHTML</span>
+      corresponde al contenido del elemento seleccionado, por lo que si
+      hacemos que su valor sea el del contador, se mostrará éste número en el 
+      documento.</p>
+    </div>
+
+    <div class="ejemplo">
+      <h3>Ejemplo 3:</h3>
+      <p>Veamos otra forma similar de manipular el DOM.</p>
+      <div class="horizontally-centered">
+        <div>
+          <input id="input-text" type="text">
+          <button onclick="updateText()">Cambiar texto</button>
+          <div id="text-container">Nadie me va a cambiar</div>
+        </div>
+      </div>
+      <p>El HTML y Javascript asociados a este ejemplo son:</p>
+      <div class="split">
+        <div class="left">
+            <pre><code class="language-markup">&lt;input id="input-text" type="text">
+&lt;button onclick="updateText()">Cambiar texto&lt;/button>
+&lt;div id="text-container">Nadie me va a cambiar&lt;/div>
+
+</code></pre>
+        </div>
+        <div class="right">
+          <pre><code class="language-javascript">function updateText(){
+  const input = document.getElementById('input-text').value;
+  document.getElementById('text-container').innerH  TML = input;
+}</code></pre>
+        </div>
+      </div>
+      <p>Como pueden ver, en HTML existe la etiqueta <span class="code">input</span>
+      para definir distintos tipos de inputs. En este caso utilizamos uno de texto.
+      A diferencia del ejemplo anterior, donde utilizamos el atributo 
+      <span class="code">innerHTML</span> para extraer el contenido, se debe
+      utilizar <span class="code">value</span> para acceder al valor del input.
+      </p>
+    </div>
+
+    <div class="ejemplo">
+      <h3>Ejemplo 4:</h3>
+      <p>Editemos ahora el CSS de un elemento.</p>
+      <div class="horizontally-centered">
+        <div>
+          <button onclick="updateColor()">Cambiar color</button>
+        </div>
+        <div id="color-container"></div>
+      </div>
+      <p>El HTML y CSS de este ejemplo son:</p>
+      <div class="split">
+        <div class="left">
+          <pre><code class="language-markup">&lt;button onclick="updateColor()">Cambiar color&lt;/button>
+&lt;div id="color-container">&lt;/div>
+
+
+
+
+</code></pre>
+        </div>
+        <div class="right">
+          <pre><code class="language-css">#color-container {
+  margin-top: 10px;
+  width: 75px;
+  height: 75px;
+  border-style: solid;
+}</code></pre>
+        </div>
+      </div>
+      <p>Mientras que el código Javscript es:</p>
+      <pre><code class="language-javascript">function updateColor(){
+  const r = Math.random() * 255;
+  const g = Math.random() * 255;
+  const b = Math.random() * 255;
+  document.getElementById('color-container').style.background = `rgb(${r}, ${g}, ${b})`;
+}</code></pre>
+      <p><span class="code">Math.random()</span> genera un número aleatorio entre
+      0 y 1. Por otro lado, el atributo <span class="code">style</span> permite
+      acceder a los atributos de estilo del elemento seleccionado, así,
+      al hacer que <span class="code">background</span> sea igual a 
+      <span class="code">'rgb(r,g,b)'</span> se está cambiando su color
+      de fondo.</p>
+    </div>
+
+  </div>
+  <script src="ejemplo.js"></script>
+  <script src="./assets/prism.js"></script>
+</body>
+</html>
