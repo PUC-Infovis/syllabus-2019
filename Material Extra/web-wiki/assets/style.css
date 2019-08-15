@@ -1,0 +1,229 @@
+.general-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.elements-container {
+    width: 70%;
+}
+
+.toggle-button {
+    background: white;
+    border: 0;
+}
+
+.content {
+    display: none;
+    padding-left: 25px;
+}
+
+.element {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.code {
+    font-weight: bold;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+}
+
+body {
+    font-size: 22px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+p {
+    text-align: justify;
+    font-size: 18px;
+}
+
+i {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+code[class*="language-"], pre[class*="language-"] {
+    font-size: 16px;
+}
+
+button {
+    font-size: 22px;
+    font-weight: 100;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.big {
+    font-size: 32px;
+}
+
+.big i {
+    font-size: 28px;
+}
+
+button:hover {
+    text-decoration: underline;
+}
+
+.split {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#solid-border {
+    border-style: solid;
+}
+
+#double-border {
+    border-style: double;
+}
+
+#dotted-border {
+    border-style: dotted;
+}
+
+.left {
+    grid-column: 1/2;
+    height: 100%;
+    margin-right: 10px;
+}
+.right {
+    grid-column: 2/3;
+    height: 100%;
+    margin-left: 10px;
+}
+#top-border {
+    border-top-style: solid;
+}
+
+#left-border {
+    border-left-style: solid;
+}
+
+#right-border {
+    border-right-style: solid;
+}
+
+#bottom-border {
+    border-bottom-style: solid;
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
+.contenedor-imagenes {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 100px 100px;
+}
+
+.contenedor-imagen {
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor-imagen img {
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor-grid {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+#naranjo {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background: orange;
+}
+
+#azul {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background: blue;
+}
+
+#verde {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background: green;
+}
+
+#blanco {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+#amarillo {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    background: yellow;
+}
+
+#rojo {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    background: red;
+}
+
+.flex-imgs-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-imgs-container img {
+    width: 100px;
+    height: 100px;
+}
+
+.ej-flex {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.ej1 {
+    justify-content: center;
+}
+
+.ej2 {
+    justify-content: space-between;
+}
+
+.ej3 {
+    justify-content: space-around;
+}
+
+.ej-flex div {
+    width: 50px;
+    height: 50px;
+    background: magenta;
+    border-style: solid;
+}
+
+.paddingless h5, .paddingless h1 {
+    padding: 0;
+    margin: 0;
+}
+
+.paddingless {
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.horizontally-centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

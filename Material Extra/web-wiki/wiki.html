@@ -1,0 +1,671 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Wiki Web</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/204cbde146.js"></script>
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu" />
+  <link href="./assets/prism.css" rel="stylesheet"/>
+  <link href='./assets/style.css' rel='stylesheet'>
+</head>
+<body>
+  <div class="general-container">
+    <div class="paddingless horizontally-centered">
+      <h1>Web Stuff Wiki</h1>
+      <h5>IIC2026 - Visualización de Información</h5>
+    </div>
+    <div class="elements-container">
+
+    <!-- HTML -->
+      <div class="element">
+        <button id="HTML-toggle-button" class="toggle-button big"><i class="fas fa-chevron-right"></i>HTML</button>
+        <div id="HTML-toggle" class="content">
+          <div class="element">
+            <button id="Header-toggle-button" class="toggle-button"><i class="fas fa-chevron-right"></i>Estructura básica documento HTML</button>
+            <div id="Header-toggle" class="content">
+              <pre>
+                <code class="language-markup">
+                  &lt;!DOCTYPE html>
+                  &lt;html>
+                    &lt;head>
+                      &lt;title>Título página&lt;/title>
+                      &lt;link href='style.css' rel='stylesheet'>
+                    &lt;/head>
+                    &lt;body>
+                    &lt;/body>
+                  &lt;/html>>
+                </code>
+              </pre>
+            </div>
+          </div>
+
+          <!-- Tags -->
+          <div class="element">
+            <button id="tags-toggle-button" class="toggle-button"><i class="fas fa-chevron-right"></i>Tags</button>
+            <div id="tags-toggle" class="content">
+
+              <div class="element">
+                <button id="head-toggle-button" class="toggle-button"><i class="fas fa-chevron-right"></i><span class="code">&lt;head&gt;&lt;/head&gt;</span></button>
+                <div id="head-toggle" class="content">
+                  <p>Contiene la metadata del documento. Aquí se importan librerías y estilos.</p>
+
+                  <!-- HEAD -->
+                  <div class="element">
+                    <button id="title-toggle-button" class="toggle-button"><i class="fas fa-chevron-right"></i><span class="code">&lt;title&gt;&lt;/title&gt;</span></button>
+                    <div id="title-toggle" class="content">
+                      <p>Contiene el título del documento.</p>
+                    </div>
+                  </div>
+
+                  <div class="element">
+                    <button id="link-toggle-button" class="toggle-button"><i class="fas fa-chevron-right"></i><span class="code">&lt;link&gt;</span></button>
+                    <div id="link-toggle" class="content">
+                      <p>Se utiliza para importar archivos de estilo.</p>
+                      <pre><code class="language-markup">&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    &lt;!-- Importando el archivo style.css -->
+    &lt;link href='style.css' rel='stylesheet'>
+    &lt;!-- Importando la familia de fuentes Ubuntu -->
+    &lt;link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu">
+  &lt;/head>
+&lt;/html>></code></pre>
+                    </div>
+                  </div>
+                  <!-- /HEAD -->
+                </div>
+              </div>
+
+              <!-- BODY -->
+              <div class="element">
+                <button id="body-toggle-button" class="toggle-button"><i class="fas fa-chevron-right"></i><span class="code">&lt;body&gt;&lt;/body&gt;</span></button>
+                <div id="body-toggle" class="content">
+                  <p>Contiene los elementos visibles del documento.</p>
+
+                  <div class="element">
+                    <button id="headers-toggle-button" class="toggle-button"><i class="fas fa-chevron-right"></i><span class="code">Headers</span></button>
+                    <div id="headers-toggle" class="content">
+                      <div class="split">
+                        <div class="left">
+                          <pre><code class="language-markup">&lt;h1>Primer header&lt;/h1>
+&lt;h2>Segundo header&lt;/h2>
+&lt;h3>Tercer header&lt;/h3>
+&lt;h4>Cuarto header&lt;/h4>
+&lt;h5>Quinto header&lt;/h5>
+&lt;h6>Sexto header&lt;/h6></code></pre>
+                        </div>
+                        <div>
+                          <h1>Primer header</h1>
+                          <h2>Segundo header</h2>
+                          <h3>Tercer header</h3>
+                          <h4>Cuarto header</h4>
+                          <h5>Quinto header</h5>
+                          <h6>Sexto header</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="element">
+                    <button id="p-toggle-button" class="toggle-button"><i class="fas fa-chevron-right"></i><span class="code">&lt;p&gt;&lt;/p&gt;</span></button>
+                    <div id="p-toggle" class="content">
+                      <p>Contiene un párrafo de texto.</p>
+                    </div>
+                  </div>
+
+                  <div class="element">
+                    <button id="span-toggle-button" class="toggle-button"><i class="fas fa-chevron-right"></i><span class="code">&lt;span&gt;&lt;/span&gt;</span></button>
+                    <div id="span-toggle" class="content">
+                      <p>Sirve para seleccionar un pedazo de texto. Por ejemplo,
+                        si queremos subrayar una sección de un parrafo:
+                      </p>
+                      <div class="split">
+                        <div class="left">
+                          <pre><code class="language-markup">&lt;p>
+  Voy a subrayar la parte 
+  &lt;span class="subrayado">
+    mas importante
+  &lt;/span> 
+  de este párrafo.
+&lt;/p></code></pre>
+                        </div>
+                        <div class="right">
+                          <p>
+                            Voy a subrayar la parte <span class="underlined">mas importante</span>
+                            de este párrafo.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="element">
+                    <button id="img-toggle-button" class="toggle-button"><i class="fas fa-chevron-right"></i><span class="code">&lt;img&gt;</span></button>
+                    <div id="img-toggle" class="content">
+                      <p>Etiqueta para mostrar una imagen. La ubicación de la imagen
+                        va en el atributo <span class="code">src</span>, la cual puede 
+                        ser una dirección web o bien la dirección local a la imagen relativa
+                        al documento HTML.
+                      </p>
+                      <pre><code class="language-markup">&lt;!-- imagen local -->
+&lt;img src="imagen.png">
+&lt;!-- imagen en la web -->
+&lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/220px-SNice.svg.png"></code></pre>
+                    </div>
+                  </div>
+
+                  <div class="element">
+                    <button id="div-toggle-button" class="toggle-button"><i class="fas fa-chevron-right"></i><span class="code">&lt;div&gt;&lt;/div&gt;</span></button>
+                    <div id="div-toggle" class="content">
+                      <p>Se utiliza para dividir o agrupar distintos elementos HTML. 
+                        Esto tiene muchas utilidades al momento de aplicar estilos
+                        y manipular el DOM mediante javascript.
+                      </p>
+                      <pre><code class="language-markup">&lt;div class="noticiario">
+  &lt;div class="noticia">
+    &lt;h1>Nombre artículo&lt;/h1>
+    &lt;img src="imagen-noticia1.png">
+    &lt;p>Contenido noticia&lt;/p>
+  &lt;/div>
+
+  &lt;div class="noticia">
+    &lt;h1>Nombre artículo&lt;/h1>
+    &lt;img src="imagen-noticia2.png">
+    &lt;p>Contenido noticia&lt;/p>
+  &lt;/div>
+&lt;/div></code></pre>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <!-- /BODY -->
+
+            </div>
+          </div>
+          <!-- / Tags -->
+
+        </div>
+      </div>
+      <!-- / HTML -->
+
+      <!-- CSS -->
+      <div class="element">
+        <button id="CSS-toggle-button" class="toggle-button big"><i class="fas fa-chevron-right"></i>CSS</button>
+        <div id="CSS-toggle" class="content">
+        <!-- atributos css -->
+          <div class="element">
+            <button id="sintaxcss-toggle-button" class="toggle-button"><i class="fas fa-chevron-right"></i>Sintaxis</button>             
+            <div id="sintaxcss-toggle" class="content">
+              <div class="element">
+                <p>La sintaxis de un selector de CSS es la siguiente:</p>
+                <pre><code class="language-css">selector { atributo: valor; }</code></pre>
+                <p>Donde el selector corresponde al elemento al que se le aplicará el estilo. 
+                  El atributo es la característica estética que será cambiada, mientras que el valor indica 
+                  en qué medida será aplicado el cambio de estilo.
+                </p>
+                <p>El selector puede ser una etiqueta HTML, una clase o un id. Dependiendo
+                  del selector que se quiere utilizar, la sintaxis varía de la siguiente forma:
+                </p>  
+                <pre>
+                  <code class="language-css">
+/* selector de una etiqueta */
+div { atributo: valor; }
+p { atributo: valor; }
+h1 { atributo: valor; }
+
+/* selector de una clase */
+.clase1 { atributo: valor; }
+.clase2 { atributo: valor; }
+.clase3 { atributo: valor; }
+
+/* selector de un id */
+#id1 { atributo: valor; }
+#id2 { atributo: valor; }
+#id3 { atributo: valor; }</code>
+                </pre>
+                <p>Además, se puede especificar más aún el selector. Por ejemplo, para
+                  seleccionar sólo los párrafos que tengan una clase específica, la sintaxis es: 
+                </p>
+                <pre><code class="language-css">p .clase { atributo: valor; }</code></pre>
+              </div>
+            </div>
+          </div>
+          <!-- General -->
+          <div class="element">
+            <button id="generalcss-toggle-button" class="toggle-button"><i class="fas fa-chevron-right"></i>General</button>             
+            <div id="generalcss-toggle" class="content">
+
+              <div class="element">
+                <button id="size-toggle-button" class="toggle-button"><i class="fas fa-chevron-right"></i>Alto y Ancho</button>             
+                <div id="size-toggle" class="content">
+                  <p>Definir alto y ancho de manera estática:</p>
+                  <pre><code class="language-css">elemento { 
+  width: 200px; 
+  height: 100px; 
+}</code></pre>
+                  <p>Definir alto y ancho responsivo respecto al tamaño del navegador:</p>
+                  <pre><code class="language-css">/* 1vw -> 1% del ancho de la vista del navegador
+   1vh -> 1% del alto de la vista del navegador */
+elemento { 
+  width: 50vw; 
+  height: 25vh; 
+}
+</code></pre>
+                  <p>Definir alto y ancho proporcional a las dimensiones del elemento padre en el DOM.</p>
+                  <pre><code class="language-css">elemento { 
+  /* 20% del ancho del padre */
+  width: 20%; 
+  /* 100% del alto del padre */
+  height: 100%; 
+}</code></pre>
+                </div>
+              </div>
+
+              <div class="element">
+                <button id="background-toggle-button" class="toggle-button"><i class="fas fa-chevron-right"></i>Color de fondo</button>             
+                <div id="background-toggle" class="content">
+                  <pre><code class="language-css">elemento { background: red; }</code></pre>  
+                </div>
+              </div>
+
+              <div class="element">
+                <button id="borders-toggle-button" class="toggle-button"><i class="fas fa-chevron-right"></i>Bordes</button>             
+                <div id="borders-toggle" class="content">
+
+                  <div class="element">
+                    <button id="bordertype-toggle-button" class="toggle-button"><i class="fas fa-chevron-right"></i>Tipo de borde</button>             
+                    <div id="bordertype-toggle" class="content">
+                      <div class="split">
+                        <div class="left">
+                        <pre><code class="language-css">#primer-elemento { border-style: none; }
+#segundo-elemento { border-style: solid; }
+#tercer-elemento { border-style: double; }
+#cuarto-elemento { border-style: dotted; }
+/* existen más tipos de bordes! */</code></pre>  
+                        </div>
+                        <div class="right">
+                          <p>Primer elemento.</p>
+                          <p id="solid-border">Segundo elemento.</p>
+                          <p id="double-border">Tercer elemento.</p>
+                          <p id="dotted-border">Cuarto elemento.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="element">
+                    <button id="borderwidth-toggle-button" class="toggle-button"><i class="fas fa-chevron-right"></i>Ancho del borde</button>             
+                    <div id="borderwidth-toggle" class="content">
+                      <pre><code class="language-css">elemento { 
+  border-style: solid;
+  border-width: 5px; 
+}</code></pre>  
+                    </div>
+                  </div>
+
+                  <div class="element">
+                    <button id="bordercolor-toggle-button" class="toggle-button"><i class="fas fa-chevron-right"></i>Color del borde</button>             
+                    <div id="bordercolor-toggle" class="content">
+                      <pre><code class="language-css">elemento { 
+  border-style: solid;
+  border-color: green; 
+}</code></pre>  
+                    </div>
+                  </div>
+
+                  <div class="element">
+                    <button id="borderside-toggle-button" class="toggle-button"><i class="fas fa-chevron-right"></i>Borde en algunos lados</button>             
+                    <div id="borderside-toggle" class="content">
+                      <div class="split">
+                        <div class="left">
+                          <pre><code class="language-css">#primer-elemento { border-top-style: solid; }
+#segundo-elemento { border-left-style: solid; }
+#tercer-elemento { border-right-style: solid; }
+#cuarto-elemento { border-bottom-style: solid; }</code></pre>  
+                        </div>
+                        <div class="right">
+                          <p id="top-border">Primer elemento.</p>
+                          <p id="left-border">Segundo elemento.</p>
+                          <p id="right-border">Tercer elemento.</p>
+                          <p id="bottom-border">Cuarto elemento.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+
+              <div class="element">
+                <button id="grid-toggle-button" class="toggle-button"><i class="fas fa-chevron-right"></i>Grillas</button>             
+                <div id="grid-toggle" class="content">
+                  <p>
+                    Supongamos que deseamos mostrar 4 imágenes dentro de un mismo cuadrado,
+                    cada con las mismas dimensiones. CSS tiene la opción de ordenar contenido
+                    mediante grillas. Por ejemplo, para lograr lo antes planteado mediante
+                    CSS y grid el código necesario es:
+                  </p>
+                  <div class="split">
+                    <div class="left">
+                  <pre><code class="language-css">.contenedor-imagenes { 
+  display: grid;
+  grid-template-columns: 100px 100px;
+  grid-template-rows: 100px 100px;
+}
+
+.contenedor-imagen {
+  width: 100%;
+  height: 100%;
+}
+
+.contenedor-imagen img {
+  width: 100%;
+  height: 100%;
+}</code></pre> 
+                    </div>
+                    <div class="right">
+                      <div class="contenedor-imagenes">
+                        <div class="contenedor-imagen">
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/220px-SNice.svg.png">
+                        </div>
+                        <div class="contenedor-imagen">
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/220px-SNice.svg.png">
+                        </div>
+                        <div class="contenedor-imagen">
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/220px-SNice.svg.png">
+                        </div>
+                        <div class="contenedor-imagen">
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/220px-SNice.svg.png">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p>La línea <span class="code">display: grid</span> activa el funcionamiento de grilla
+                  del elemento. El atributo <span class="code">grid-template-columns</span>
+                  determina cuantas columnas tendrá la grilla, y de qué tamaño serán, mientras que 
+                  <span class="code">grid-template-rows</span> hace lo mismo con las filas.
+                  En el ejemplo anterior, se determina que cada columna tendrá un ancho de 100px,
+                  y cada fila una altura de 100px. Pero estas dimensiones se pueden determinar de distintas formas:
+                  </p>
+                  <pre><code class="language-css">// Dimensiones estáticas
+.grilla { 
+  display: grid;
+  grid-template-columns: 100px 100px;
+  grid-template-rows: 100px 100px;
+}
+
+// Dimensiones relativas
+// fr = fraccion, es decir, se repartirá el espacio en dos fracciones iguales
+.grilla { 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+// Dimensiones responsivas y relativas al tamaño de la ventana
+.grilla { 
+  display: grid;
+  grid-template-columns: 20vw 20vw;
+  grid-template-rows: 20vh 20vh;
+}
+
+// Dimensiones responsivas y estáticas
+// Tendrán un tamaño mínimo de 100px y un máximo
+// del 20% del largo de la ventana del navegador
+.grilla { 
+  display: grid;
+  grid-template-columns: minmax(100px, 20vw) minmax(100px, 20vw);
+  grid-template-rows: minmax(100px, 20vw) minmax(100px, 20vw);
+}
+
+// Dimensiones adaptables
+// La columna del medio tendrá 200px de ancho, mientras que 
+// las otras dos rellenarán el resto del tamaño disponible
+.grilla { 
+  display: grid;
+  grid-template-columns: auto 200px auto;
+}</code></pre>
+                <p>
+                  Para definir en qué espacio irán los elementos dentro de 
+                  la grilla se utilizan los atributos <span class="code">grid-column</span>
+                  y <span class="code">grid-row</span>. La sintaxis es la siguiente:
+                  si se quiere ubicar un elemento en la la segunda columna, y cuarta fila
+                  el código sería:
+                </p>
+                <pre><code class="language-css">.elemento { 
+  grid-column: 2/3;
+  grid-row: 4/5;
+}</code></pre>
+                <p>Cabe notar que los elementos ubicados dentro de la grilla deben
+                  estar dentro el tag asociado a la grilla que los contiene.
+                </p>
+                <p>Un último ejemplo de cómo funciona grid:</p>
+                <div class="split">
+                  <div class="left">
+                      <pre><code class="language-markup">&lt;div class="contenedor">
+  &lt;div id="naranjo">&lt;/div>
+  &lt;div id="azul">&lt;/div>
+  &lt;div id="verde">&lt;/div>
+  &lt;div id="blanco">&lt;/div>
+  &lt;div id="amarillo">&lt;/div>
+  &lt;div id="rojo">&lt;/div>
+&lt;/div></code></pre>
+<pre><code class="language-css">.contenedor { 
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+#naranjo {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  background: orange;
+}
+
+#azul {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  background: blue;
+}
+
+#verde {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  background: green;
+}
+
+#blanco {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+#amarillo {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  background: yellow;
+}
+
+#rojo {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  background: red;
+}</code></pre>
+                    </div>
+                    <div class="right">
+                      <div class="contenedor-grid">
+                        <div id="naranjo"></div>
+                        <div id="azul"></div>
+                        <div id="verde"></div>
+                        <div id="blanco"></div>
+                        <div id="amarillo"></div>
+                        <div id="rojo"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <p>
+                    Para aprender más sobre grid y cómo usarlo, se recomienda
+                    visitar <a href="https://css-tricks.com/snippets/css/complete-guide-grid/">esta guía</a>.
+                  </p>
+                </div>
+              </div>
+
+              <div class="element">
+                <button id="flex-toggle-button" class="toggle-button"><i class="fas fa-chevron-right"></i>Flex</button>             
+                <div id="flex-toggle" class="content">
+                  <p>Al igual que <span class="code">grid</span>, <span class="code">flex</span>
+                  es una opción de <span class="code">display</span> que permite
+                  ordenar los elementos dentro de un espacio. Está pensado para que
+                  este orden sea responsivo, lo que lo vuelve una opción muy útil
+                  cuando queremos que los elementos se encuentren en una posición
+                  sin importar las dimensiones del navegador.</p>
+                  <p>Por ejemplo, para mostrar imágenes de 100x100px en una columna,
+                    siempre utilizando el centro horizontal de su contenedor, el código
+                    CSS es:
+                  </p>
+                  <div class="split">
+                    <div class="left">
+                        <pre><code class="language-css">.contenedor { 
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.contenedor img {
+  width: 100px;
+  height: 100px;
+}</code></pre>  
+                    </div>
+                    <div class="right">
+                      <div class="flex-imgs-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/220px-SNice.svg.png">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/220px-SNice.svg.png">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/220px-SNice.svg.png">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/220px-SNice.svg.png">
+                      </div>
+                    </div>
+                  </div>
+                  <p>La línea <span class="code">display: flex</span> activa el modo
+                  flex dentro del elemento. El atributo <span class="code">flex-direction</span>
+                  indica en qué dirección se alinearán los elementos dentro del contenedor; pueden
+                  alinearse como columna o fila. Por otro lado, <span class="code">align-items</span>
+                  corresponde a la alineación que tendrán los elementos; pueden ubicarse al final 
+                  del contanador, al inicio, al centro, etc. Otro atributo importante es 
+                  <span class="code">justify-content</span>, el cual indica cómo se reparten
+                  el espacio los distintos elementos. Algunos ejemplos de <span class="code">justify-content</span>:
+                  </p>
+                  <div class="split">
+                    <div class="left">
+                        <pre><code class="language-css">.ej1 { 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.ej2 { 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.ej3 { 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}</code></pre>  
+                    </div>
+                    <div class="right">
+                      <div class="flex-imgs-container">
+                        <h6>Ejemplo 1</h6>
+                        <div class="ej-flex ej1">
+                          <div></div>
+                          <div></div>
+                          <div></div>
+                        </div>
+                        <h6>Ejemplo 2</h6>
+                        <div class="ej-flex ej2">
+                          <div></div>
+                          <div></div>
+                          <div></div>
+                        </div>
+                        <h6>Ejemplo 3</h6>
+                        <div class="ej-flex ej3">
+                          <div></div>
+                          <div></div>
+                          <div></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">En este link</a> podrán encontrar una guía mucho más 
+                  detallada y completa de flex y sus funcionalidades.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Fuentes -->
+          <div class="element">
+            <button id="font-toggle-button" class="toggle-button"><i class="fas fa-chevron-right"></i>Texto</button>             
+            <div id="font-toggle" class="content">
+
+              <div class="element">
+                <button id="fontsize-toggle-button" class="toggle-button"><i class="fas fa-chevron-right"></i>Tamaño fuente</button>           
+                <div id="fontsize-toggle" class="content">
+                  <pre><code class="language-css">elemento { font-size: 20px; }</code></pre>  
+                </div>
+              </div>
+
+              <div class="element">
+                <button id="fontcolor-toggle-button" class="toggle-button"><i class="fas fa-chevron-right"></i>Color texto</button>         
+                <div id="fontcolor-toggle" class="content">
+                  <pre><code class="language-css">elemento { color: blue; }</code></pre>  
+                </div>
+              </div>
+
+              <div class="element">
+                <button id="fontfamily-toggle-button" class="toggle-button"><i class="fas fa-chevron-right"></i>Cambiar fuente</button>         
+                <div id="fontfamily-toggle" class="content">
+                  <pre><code class="language-css">elemento { font-family: 'Courier New', Courier, monospace; }</code></pre>  
+                </div>
+              </div>
+
+              <div class="element">
+                <button id="bold-toggle-button" class="toggle-button"><i class="fas fa-chevron-right"></i>Negrita</button>        
+                <div id="bold-toggle" class="content">
+                  <pre><code class="language-css">elemento { font-weight: bold; }</code></pre>  
+                </div>
+              </div>
+
+              <div class="element">
+                <button id="underline-toggle-button" class="toggle-button"><i class="fas fa-chevron-right"></i>Subrayar</button>      
+                <div id="underline-toggle" class="content">
+                  <pre><code class="language-css">elemento { text-decoration: underline; }</code></pre>  
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- / Fuentes -->
+        <!-- / atributos css -->
+        </div>
+      </div>
+
+      <!-- JS -->
+      <div class="element">
+        <button id="JS-toggle-button" class="toggle-button big"><i class="fas fa-chevron-right"></i>JS</button>
+        <div id="JS-toggle" class="content"> <p>
+            work in progress...
+        </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./assets/prism.js"></script>
+  <script src="./assets/general.js"></script>
+</body>
+</html>
