@@ -1,3 +1,9 @@
+#d3-header {
+    text-align: center;
+    font-size: 24pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 .pokemon {
     display: inline-block;
     width: 23%;
