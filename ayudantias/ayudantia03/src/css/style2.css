@@ -1,0 +1,12 @@
+.pokemon {
+    display: inline-block;
+    width: 23%;
+    margin-left: 1%;
+    margin-bottom: 4px;
+    border: 1px solid black;
+    /* font-size: 30px; */
+    text-align: center;
+    border-radius: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    }
