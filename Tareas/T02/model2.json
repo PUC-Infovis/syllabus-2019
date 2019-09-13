@@ -1,235 +1,167 @@
 {
     "nodes": [
         {
-            "id": 3,
-            "is_leaf": true,
-            "survival": 44,
-            "not_survival": 376
-        },
-        {
             "id": 4,
             "is_leaf": true,
-            "survival": 56,
-            "not_survival": 188
+            "survival": 10,
+            "not_survival": 49
         },
         {
-            "id": 2,
-            "is_leaf": false,
-            "attribute": "Age group",
-            "is_categorical": true,
-            "value": [
-                "20 - 29",
-                "0 - 9"
-            ]
-        },
-        {
-            "id": 6,
+            "id": 5,
             "is_leaf": true,
-            "survival": 3,
-            "not_survival": 25
+            "survival": 19,
+            "not_survival": 22
+        },
+        {
+            "id": 3,
+            "is_leaf": false,
+            "attribute": "Age",
+            "is_categorical": false,
+            "value": 6.9621
         },
         {
             "id": 7,
             "is_leaf": true,
-            "survival": 58,
-            "not_survival": 93
+            "survival": 5,
+            "not_survival": 68
         },
         {
-            "id": 5,
+            "id": 8,
+            "is_leaf": true,
+            "survival": 66,
+            "not_survival": 425
+        },
+        {
+            "id": 6,
             "is_leaf": false,
             "attribute": "Age",
             "is_categorical": false,
-            "value": 54.5
+            "value": 38.8061
         },
         {
-            "id": 1,
+            "id": 2,
             "is_leaf": false,
-            "attribute": "Class",
+            "attribute": "Parents / Children aboard",
             "is_categorical": false,
-            "value": 1.5
+            "value": 0.1674
         },
         {
             "id": 10,
             "is_leaf": true,
-            "survival": 3,
-            "not_survival": 30
+            "survival": 2,
+            "not_survival": 0
+        },
+        {
+            "id": 12,
+            "is_leaf": true,
+            "survival": 1,
+            "not_survival": 11
+        },
+        {
+            "id": 13,
+            "is_leaf": true,
+            "survival": 58,
+            "not_survival": 107
         },
         {
             "id": 11,
-            "is_leaf": true,
-            "survival": 103,
-            "not_survival": 80
+            "is_leaf": false,
+            "attribute": "Fare",
+            "is_categorical": false,
+            "value": 205.3479
         },
         {
             "id": 9,
             "is_leaf": false,
             "attribute": "Fare",
             "is_categorical": false,
-            "value": 23.35
+            "value": 339.7015
         },
         {
-            "id": 13,
-            "is_leaf": true,
-            "survival": 166,
-            "not_survival": 5
-        },
-        {
-            "id": 14,
-            "is_leaf": true,
-            "survival": 67,
-            "not_survival": 12
-        },
-        {
-            "id": 12,
-            "is_leaf": false,
-            "attribute": "Fare",
-            "is_categorical": false,
-            "value": 26.125
-        },
-        {
-            "id": 8,
+            "id": 1,
             "is_leaf": false,
             "attribute": "Class",
             "is_categorical": false,
-            "value": 2.5
-        },
-        {
-            "id": 0,
-            "is_leaf": false,
-            "attribute": "Gender",
-            "is_categorical": true,
-            "value": [
-                "female"
-            ]
-        },
-        {
-            "id": 19,
-            "is_leaf": true,
-            "survival": 0,
-            "not_survival": 13
-        },
-        {
-            "id": 20,
-            "is_leaf": true,
-            "survival": 24,
-            "not_survival": 192
-        },
-        {
-            "id": 18,
-            "is_leaf": false,
-            "attribute": "Siblings / Spouse aboard",
-            "is_categorical": false,
-            "value": 2.6621
-        },
-        {
-            "id": 22,
-            "is_leaf": true,
-            "survival": 20,
-            "not_survival": 171
-        },
-        {
-            "id": 23,
-            "is_leaf": true,
-            "survival": 56,
-            "not_survival": 188
-        },
-        {
-            "id": 21,
-            "is_leaf": false,
-            "attribute": "Age group",
-            "is_categorical": true,
-            "value": [
-                "20 - 29",
-                "0 - 9"
-            ]
+            "value": 1.9775
         },
         {
             "id": 17,
-            "is_leaf": false,
-            "attribute": "Age group",
-            "is_categorical": true,
-            "value": [
-                "20 - 29",
-                "0 - 9",
-                "30 - 39",
-                "40 - 49",
-                "60 - 69",
-                "50 - 59",
-                "70 - 79"
-            ]
-        },
-        {
-            "id": 25,
             "is_leaf": true,
-            "survival": 2,
-            "not_survival": 0
+            "survival": 12,
+            "not_survival": 33
         },
         {
-            "id": 27,
+            "id": 18,
             "is_leaf": true,
-            "survival": 2,
-            "not_survival": 15
-        },
-        {
-            "id": 28,
-            "is_leaf": true,
-            "survival": 57,
-            "not_survival": 103
-        },
-        {
-            "id": 26,
-            "is_leaf": false,
-            "attribute": "Age",
-            "is_categorical": false,
-            "value": 58.9665
-        },
-        {
-            "id": 24,
-            "is_leaf": false,
-            "attribute": "Fare",
-            "is_categorical": false,
-            "value": 464.6858
+            "survival": 94,
+            "not_survival": 77
         },
         {
             "id": 16,
             "is_leaf": false,
-            "attribute": "Class",
+            "attribute": "Fare",
             "is_categorical": false,
-            "value": 1.6348
+            "value": 20.2629
         },
         {
-            "id": 32,
+            "id": 20,
             "is_leaf": true,
-            "survival": 8,
-            "not_survival": 22
-        },
-        {
-            "id": 33,
-            "is_leaf": true,
-            "survival": 98,
-            "not_survival": 88
-        },
-        {
-            "id": 31,
-            "is_leaf": false,
-            "attribute": "Siblings / Spouse aboard",
-            "is_categorical": false,
-            "value": 1.282
-        },
-        {
-            "id": 35,
-            "is_leaf": true,
-            "survival": 13,
+            "survival": 21,
             "not_survival": 0
         },
         {
-            "id": 36,
+            "id": 21,
             "is_leaf": true,
-            "survival": 81,
+            "survival": 73,
             "not_survival": 12
         },
         {
-            "id": 34,
+            "id": 19,
+            "is_leaf": false,
+            "attribute": "Parents / Children aboard",
+            "is_categorical": false,
+            "value": 1.952
+        },
+        {
+            "id": 15,
+            "is_leaf": false,
+            "attribute": "Class",
+            "is_categorical": false,
+            "value": 2.2462
+        },
+        {
+            "id": 24,
+            "is_leaf": true,
+            "survival": 36,
+            "not_survival": 3
+        },
+        {
+            "id": 25,
+            "is_leaf": true,
+            "survival": 88,
+            "not_survival": 0
+        },
+        {
+            "id": 23,
+            "is_leaf": false,
+            "attribute": "Fare",
+            "is_categorical": false,
+            "value": 135.0008
+        },
+        {
+            "id": 27,
+            "is_leaf": true,
+            "survival": 6,
+            "not_survival": 2
+        },
+        {
+            "id": 28,
+            "is_leaf": true,
+            "survival": 9,
+            "not_survival": 0
+        },
+        {
+            "id": 26,
             "is_leaf": false,
             "attribute": "Port of Embarkation",
             "is_categorical": true,
@@ -238,63 +170,21 @@
             ]
         },
         {
-            "id": 30,
+            "id": 22,
+            "is_leaf": false,
+            "attribute": "Fare",
+            "is_categorical": false,
+            "value": 34.0568
+        },
+        {
+            "id": 14,
             "is_leaf": false,
             "attribute": "Class",
             "is_categorical": false,
-            "value": 2.1208
+            "value": 1.3525
         },
         {
-            "id": 38,
-            "is_leaf": true,
-            "survival": 11,
-            "not_survival": 0
-        },
-        {
-            "id": 40,
-            "is_leaf": true,
-            "survival": 128,
-            "not_survival": 4
-        },
-        {
-            "id": 41,
-            "is_leaf": true,
-            "survival": 0,
-            "not_survival": 1
-        },
-        {
-            "id": 39,
-            "is_leaf": false,
-            "attribute": "Age",
-            "is_categorical": false,
-            "value": 8.8121
-        },
-        {
-            "id": 37,
-            "is_leaf": false,
-            "attribute": "Age group",
-            "is_categorical": true,
-            "value": [
-                "20 - 29",
-                "0 - 9",
-                "30 - 39",
-                "40 - 49",
-                "60 - 69",
-                "50 - 59",
-                "70 - 79",
-                "10 - 19",
-                "80 - 89"
-            ]
-        },
-        {
-            "id": 29,
-            "is_leaf": false,
-            "attribute": "Class",
-            "is_categorical": false,
-            "value": 1.224
-        },
-        {
-            "id": 15,
+            "id": 0,
             "is_leaf": false,
             "attribute": "Gender",
             "is_categorical": true,
@@ -305,8 +195,28 @@
     ],
     "links": [
         {
-            "source": 2,
+            "source": 3,
+            "target": 5,
+            "direction": "left"
+        },
+        {
+            "source": 3,
             "target": 4,
+            "direction": "right"
+        },
+        {
+            "source": 6,
+            "target": 8,
+            "direction": "left"
+        },
+        {
+            "source": 6,
+            "target": 7,
+            "direction": "right"
+        },
+        {
+            "source": 2,
+            "target": 6,
             "direction": "left"
         },
         {
@@ -315,23 +225,13 @@
             "direction": "right"
         },
         {
-            "source": 5,
-            "target": 7,
+            "source": 11,
+            "target": 13,
             "direction": "left"
         },
         {
-            "source": 5,
-            "target": 6,
-            "direction": "right"
-        },
-        {
-            "source": 1,
-            "target": 5,
-            "direction": "left"
-        },
-        {
-            "source": 1,
-            "target": 2,
+            "source": 11,
+            "target": 12,
             "direction": "right"
         },
         {
@@ -345,63 +245,53 @@
             "direction": "right"
         },
         {
-            "source": 12,
-            "target": 14,
-            "direction": "left"
-        },
-        {
-            "source": 12,
-            "target": 13,
-            "direction": "right"
-        },
-        {
-            "source": 8,
-            "target": 12,
-            "direction": "left"
-        },
-        {
-            "source": 8,
+            "source": 1,
             "target": 9,
-            "direction": "right"
-        },
-        {
-            "source": 0,
-            "target": 8,
             "direction": "left"
         },
         {
-            "source": 0,
-            "target": 1,
+            "source": 1,
+            "target": 2,
             "direction": "right"
         },
         {
-            "source": 18,
-            "target": 20,
+            "source": 16,
+            "target": 18,
             "direction": "left"
         },
         {
-            "source": 18,
-            "target": 19,
+            "source": 16,
+            "target": 17,
             "direction": "right"
         },
         {
-            "source": 21,
-            "target": 23,
-            "direction": "left"
-        },
-        {
-            "source": 21,
-            "target": 22,
-            "direction": "right"
-        },
-        {
-            "source": 17,
+            "source": 19,
             "target": 21,
             "direction": "left"
         },
         {
-            "source": 17,
-            "target": 18,
+            "source": 19,
+            "target": 20,
+            "direction": "right"
+        },
+        {
+            "source": 15,
+            "target": 19,
+            "direction": "left"
+        },
+        {
+            "source": 15,
+            "target": 16,
+            "direction": "right"
+        },
+        {
+            "source": 23,
+            "target": 25,
+            "direction": "left"
+        },
+        {
+            "source": 23,
+            "target": 24,
             "direction": "right"
         },
         {
@@ -415,93 +305,33 @@
             "direction": "right"
         },
         {
-            "source": 24,
+            "source": 22,
             "target": 26,
             "direction": "left"
         },
         {
-            "source": 24,
-            "target": 25,
+            "source": 22,
+            "target": 23,
             "direction": "right"
         },
         {
-            "source": 16,
-            "target": 24,
+            "source": 14,
+            "target": 22,
             "direction": "left"
         },
         {
-            "source": 16,
-            "target": 17,
+            "source": 14,
+            "target": 15,
             "direction": "right"
         },
         {
-            "source": 31,
-            "target": 33,
+            "source": 0,
+            "target": 14,
             "direction": "left"
         },
         {
-            "source": 31,
-            "target": 32,
-            "direction": "right"
-        },
-        {
-            "source": 34,
-            "target": 36,
-            "direction": "left"
-        },
-        {
-            "source": 34,
-            "target": 35,
-            "direction": "right"
-        },
-        {
-            "source": 30,
-            "target": 34,
-            "direction": "left"
-        },
-        {
-            "source": 30,
-            "target": 31,
-            "direction": "right"
-        },
-        {
-            "source": 39,
-            "target": 41,
-            "direction": "left"
-        },
-        {
-            "source": 39,
-            "target": 40,
-            "direction": "right"
-        },
-        {
-            "source": 37,
-            "target": 39,
-            "direction": "left"
-        },
-        {
-            "source": 37,
-            "target": 38,
-            "direction": "right"
-        },
-        {
-            "source": 29,
-            "target": 37,
-            "direction": "left"
-        },
-        {
-            "source": 29,
-            "target": 30,
-            "direction": "right"
-        },
-        {
-            "source": 15,
-            "target": 29,
-            "direction": "left"
-        },
-        {
-            "source": 15,
-            "target": 16,
+            "source": 0,
+            "target": 1,
             "direction": "right"
         }
     ]
