@@ -1,0 +1,178 @@
+{
+    "nodes": [
+        {
+            "id": 3,
+            "is_leaf": true,
+            "survival": 44,
+            "not_survival": 376
+        },
+        {
+            "id": 4,
+            "is_leaf": true,
+            "survival": 56,
+            "not_survival": 188
+        },
+        {
+            "id": 2,
+            "is_leaf": false,
+            "attribute": "Age group",
+            "is_categorical": true,
+            "value": [
+                "20 - 29",
+                "0 - 9"
+            ]
+        },
+        {
+            "id": 6,
+            "is_leaf": true,
+            "survival": 3,
+            "not_survival": 25
+        },
+        {
+            "id": 7,
+            "is_leaf": true,
+            "survival": 58,
+            "not_survival": 93
+        },
+        {
+            "id": 5,
+            "is_leaf": false,
+            "attribute": "Age",
+            "is_categorical": false,
+            "value": 54.5
+        },
+        {
+            "id": 1,
+            "is_leaf": false,
+            "attribute": "Class",
+            "is_categorical": false,
+            "value": 1.5
+        },
+        {
+            "id": 10,
+            "is_leaf": true,
+            "survival": 3,
+            "not_survival": 30
+        },
+        {
+            "id": 11,
+            "is_leaf": true,
+            "survival": 103,
+            "not_survival": 80
+        },
+        {
+            "id": 9,
+            "is_leaf": false,
+            "attribute": "Fare",
+            "is_categorical": false,
+            "value": 23.35
+        },
+        {
+            "id": 13,
+            "is_leaf": true,
+            "survival": 166,
+            "not_survival": 5
+        },
+        {
+            "id": 14,
+            "is_leaf": true,
+            "survival": 67,
+            "not_survival": 12
+        },
+        {
+            "id": 12,
+            "is_leaf": false,
+            "attribute": "Fare",
+            "is_categorical": false,
+            "value": 26.125
+        },
+        {
+            "id": 8,
+            "is_leaf": false,
+            "attribute": "Class",
+            "is_categorical": false,
+            "value": 2.5
+        },
+        {
+            "id": 0,
+            "is_leaf": false,
+            "attribute": "Gender",
+            "is_categorical": true,
+            "value": [
+                "female"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "source": 2,
+            "target": 4,
+            "direction": "left"
+        },
+        {
+            "source": 2,
+            "target": 3,
+            "direction": "right"
+        },
+        {
+            "source": 5,
+            "target": 7,
+            "direction": "left"
+        },
+        {
+            "source": 5,
+            "target": 6,
+            "direction": "right"
+        },
+        {
+            "source": 1,
+            "target": 5,
+            "direction": "left"
+        },
+        {
+            "source": 1,
+            "target": 2,
+            "direction": "right"
+        },
+        {
+            "source": 9,
+            "target": 11,
+            "direction": "left"
+        },
+        {
+            "source": 9,
+            "target": 10,
+            "direction": "right"
+        },
+        {
+            "source": 12,
+            "target": 14,
+            "direction": "left"
+        },
+        {
+            "source": 12,
+            "target": 13,
+            "direction": "right"
+        },
+        {
+            "source": 8,
+            "target": 12,
+            "direction": "left"
+        },
+        {
+            "source": 8,
+            "target": 9,
+            "direction": "right"
+        },
+        {
+            "source": 0,
+            "target": 8,
+            "direction": "left"
+        },
+        {
+            "source": 0,
+            "target": 1,
+            "direction": "right"
+        }
+    ]
+}

@@ -1,0 +1,508 @@
+{
+    "nodes": [
+        {
+            "id": 3,
+            "is_leaf": true,
+            "survival": 44,
+            "not_survival": 376
+        },
+        {
+            "id": 4,
+            "is_leaf": true,
+            "survival": 56,
+            "not_survival": 188
+        },
+        {
+            "id": 2,
+            "is_leaf": false,
+            "attribute": "Age group",
+            "is_categorical": true,
+            "value": [
+                "20 - 29",
+                "0 - 9"
+            ]
+        },
+        {
+            "id": 6,
+            "is_leaf": true,
+            "survival": 3,
+            "not_survival": 25
+        },
+        {
+            "id": 7,
+            "is_leaf": true,
+            "survival": 58,
+            "not_survival": 93
+        },
+        {
+            "id": 5,
+            "is_leaf": false,
+            "attribute": "Age",
+            "is_categorical": false,
+            "value": 54.5
+        },
+        {
+            "id": 1,
+            "is_leaf": false,
+            "attribute": "Class",
+            "is_categorical": false,
+            "value": 1.5
+        },
+        {
+            "id": 10,
+            "is_leaf": true,
+            "survival": 3,
+            "not_survival": 30
+        },
+        {
+            "id": 11,
+            "is_leaf": true,
+            "survival": 103,
+            "not_survival": 80
+        },
+        {
+            "id": 9,
+            "is_leaf": false,
+            "attribute": "Fare",
+            "is_categorical": false,
+            "value": 23.35
+        },
+        {
+            "id": 13,
+            "is_leaf": true,
+            "survival": 166,
+            "not_survival": 5
+        },
+        {
+            "id": 14,
+            "is_leaf": true,
+            "survival": 67,
+            "not_survival": 12
+        },
+        {
+            "id": 12,
+            "is_leaf": false,
+            "attribute": "Fare",
+            "is_categorical": false,
+            "value": 26.125
+        },
+        {
+            "id": 8,
+            "is_leaf": false,
+            "attribute": "Class",
+            "is_categorical": false,
+            "value": 2.5
+        },
+        {
+            "id": 0,
+            "is_leaf": false,
+            "attribute": "Gender",
+            "is_categorical": true,
+            "value": [
+                "female"
+            ]
+        },
+        {
+            "id": 19,
+            "is_leaf": true,
+            "survival": 0,
+            "not_survival": 13
+        },
+        {
+            "id": 20,
+            "is_leaf": true,
+            "survival": 24,
+            "not_survival": 192
+        },
+        {
+            "id": 18,
+            "is_leaf": false,
+            "attribute": "Siblings / Spouse aboard",
+            "is_categorical": false,
+            "value": 2.6621
+        },
+        {
+            "id": 22,
+            "is_leaf": true,
+            "survival": 20,
+            "not_survival": 171
+        },
+        {
+            "id": 23,
+            "is_leaf": true,
+            "survival": 56,
+            "not_survival": 188
+        },
+        {
+            "id": 21,
+            "is_leaf": false,
+            "attribute": "Age group",
+            "is_categorical": true,
+            "value": [
+                "20 - 29",
+                "0 - 9"
+            ]
+        },
+        {
+            "id": 17,
+            "is_leaf": false,
+            "attribute": "Age group",
+            "is_categorical": true,
+            "value": [
+                "20 - 29",
+                "0 - 9",
+                "30 - 39",
+                "40 - 49",
+                "60 - 69",
+                "50 - 59",
+                "70 - 79"
+            ]
+        },
+        {
+            "id": 25,
+            "is_leaf": true,
+            "survival": 2,
+            "not_survival": 0
+        },
+        {
+            "id": 27,
+            "is_leaf": true,
+            "survival": 2,
+            "not_survival": 15
+        },
+        {
+            "id": 28,
+            "is_leaf": true,
+            "survival": 57,
+            "not_survival": 103
+        },
+        {
+            "id": 26,
+            "is_leaf": false,
+            "attribute": "Age",
+            "is_categorical": false,
+            "value": 58.9665
+        },
+        {
+            "id": 24,
+            "is_leaf": false,
+            "attribute": "Fare",
+            "is_categorical": false,
+            "value": 464.6858
+        },
+        {
+            "id": 16,
+            "is_leaf": false,
+            "attribute": "Class",
+            "is_categorical": false,
+            "value": 1.6348
+        },
+        {
+            "id": 32,
+            "is_leaf": true,
+            "survival": 8,
+            "not_survival": 22
+        },
+        {
+            "id": 33,
+            "is_leaf": true,
+            "survival": 98,
+            "not_survival": 88
+        },
+        {
+            "id": 31,
+            "is_leaf": false,
+            "attribute": "Siblings / Spouse aboard",
+            "is_categorical": false,
+            "value": 1.282
+        },
+        {
+            "id": 35,
+            "is_leaf": true,
+            "survival": 13,
+            "not_survival": 0
+        },
+        {
+            "id": 36,
+            "is_leaf": true,
+            "survival": 81,
+            "not_survival": 12
+        },
+        {
+            "id": 34,
+            "is_leaf": false,
+            "attribute": "Port of Embarkation",
+            "is_categorical": true,
+            "value": [
+                "Southampton"
+            ]
+        },
+        {
+            "id": 30,
+            "is_leaf": false,
+            "attribute": "Class",
+            "is_categorical": false,
+            "value": 2.1208
+        },
+        {
+            "id": 38,
+            "is_leaf": true,
+            "survival": 11,
+            "not_survival": 0
+        },
+        {
+            "id": 40,
+            "is_leaf": true,
+            "survival": 128,
+            "not_survival": 4
+        },
+        {
+            "id": 41,
+            "is_leaf": true,
+            "survival": 0,
+            "not_survival": 1
+        },
+        {
+            "id": 39,
+            "is_leaf": false,
+            "attribute": "Age",
+            "is_categorical": false,
+            "value": 8.8121
+        },
+        {
+            "id": 37,
+            "is_leaf": false,
+            "attribute": "Age group",
+            "is_categorical": true,
+            "value": [
+                "20 - 29",
+                "0 - 9",
+                "30 - 39",
+                "40 - 49",
+                "60 - 69",
+                "50 - 59",
+                "70 - 79",
+                "10 - 19",
+                "80 - 89"
+            ]
+        },
+        {
+            "id": 29,
+            "is_leaf": false,
+            "attribute": "Class",
+            "is_categorical": false,
+            "value": 1.224
+        },
+        {
+            "id": 15,
+            "is_leaf": false,
+            "attribute": "Gender",
+            "is_categorical": true,
+            "value": [
+                "female"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "source": 2,
+            "target": 4,
+            "direction": "left"
+        },
+        {
+            "source": 2,
+            "target": 3,
+            "direction": "right"
+        },
+        {
+            "source": 5,
+            "target": 7,
+            "direction": "left"
+        },
+        {
+            "source": 5,
+            "target": 6,
+            "direction": "right"
+        },
+        {
+            "source": 1,
+            "target": 5,
+            "direction": "left"
+        },
+        {
+            "source": 1,
+            "target": 2,
+            "direction": "right"
+        },
+        {
+            "source": 9,
+            "target": 11,
+            "direction": "left"
+        },
+        {
+            "source": 9,
+            "target": 10,
+            "direction": "right"
+        },
+        {
+            "source": 12,
+            "target": 14,
+            "direction": "left"
+        },
+        {
+            "source": 12,
+            "target": 13,
+            "direction": "right"
+        },
+        {
+            "source": 8,
+            "target": 12,
+            "direction": "left"
+        },
+        {
+            "source": 8,
+            "target": 9,
+            "direction": "right"
+        },
+        {
+            "source": 0,
+            "target": 8,
+            "direction": "left"
+        },
+        {
+            "source": 0,
+            "target": 1,
+            "direction": "right"
+        },
+        {
+            "source": 18,
+            "target": 20,
+            "direction": "left"
+        },
+        {
+            "source": 18,
+            "target": 19,
+            "direction": "right"
+        },
+        {
+            "source": 21,
+            "target": 23,
+            "direction": "left"
+        },
+        {
+            "source": 21,
+            "target": 22,
+            "direction": "right"
+        },
+        {
+            "source": 17,
+            "target": 21,
+            "direction": "left"
+        },
+        {
+            "source": 17,
+            "target": 18,
+            "direction": "right"
+        },
+        {
+            "source": 26,
+            "target": 28,
+            "direction": "left"
+        },
+        {
+            "source": 26,
+            "target": 27,
+            "direction": "right"
+        },
+        {
+            "source": 24,
+            "target": 26,
+            "direction": "left"
+        },
+        {
+            "source": 24,
+            "target": 25,
+            "direction": "right"
+        },
+        {
+            "source": 16,
+            "target": 24,
+            "direction": "left"
+        },
+        {
+            "source": 16,
+            "target": 17,
+            "direction": "right"
+        },
+        {
+            "source": 31,
+            "target": 33,
+            "direction": "left"
+        },
+        {
+            "source": 31,
+            "target": 32,
+            "direction": "right"
+        },
+        {
+            "source": 34,
+            "target": 36,
+            "direction": "left"
+        },
+        {
+            "source": 34,
+            "target": 35,
+            "direction": "right"
+        },
+        {
+            "source": 30,
+            "target": 34,
+            "direction": "left"
+        },
+        {
+            "source": 30,
+            "target": 31,
+            "direction": "right"
+        },
+        {
+            "source": 39,
+            "target": 41,
+            "direction": "left"
+        },
+        {
+            "source": 39,
+            "target": 40,
+            "direction": "right"
+        },
+        {
+            "source": 37,
+            "target": 39,
+            "direction": "left"
+        },
+        {
+            "source": 37,
+            "target": 38,
+            "direction": "right"
+        },
+        {
+            "source": 29,
+            "target": 37,
+            "direction": "left"
+        },
+        {
+            "source": 29,
+            "target": 30,
+            "direction": "right"
+        },
+        {
+            "source": 15,
+            "target": 29,
+            "direction": "left"
+        },
+        {
+            "source": 15,
+            "target": 16,
+            "direction": "right"
+        }
+    ]
+}
